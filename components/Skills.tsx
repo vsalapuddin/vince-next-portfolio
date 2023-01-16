@@ -21,9 +21,7 @@ function Skills({}: Props) {
         Hover over Skills
       </h3>
 
-      <div className="grid grid-cols-4 gap-5">
-        <Skill />
-        <Skill />
+      <div className="grid grid-cols-3 gap-5">
         <Skill />
         <Skill />
         <Skill />

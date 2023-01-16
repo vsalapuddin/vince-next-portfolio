@@ -23,10 +23,10 @@ const Home: NextPage = () => {
       <section id="experience" className="snap-center">
         <Experience />
       </section>
-      <section id="skills" className="snap-center">
+      <section id="skills" className="snap-start">
         <Skills />
       </section>
-      <section id="projects" className="snap-center">
+      <section id="projects" className="snap-start">
         <Projects />
       </section>
     </div>
