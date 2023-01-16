@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "next/Link";
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 type Props = {};
@@ -10,7 +10,7 @@ export default function Hero({}: Props) {
       initial={{ y: -500, opacity: 0, scale: 1 }}
       animate={{ y: 0, opacity: 1, scale: 1 }}
       transition={{ duration: 1.5 }}
-      className="h-screen flex flex-col space-y-8 items-center justify-center"
+      className="h-screen flex flex-col space-y-8 items-center justify-center z-20"
     >
       <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
         Web Developer
