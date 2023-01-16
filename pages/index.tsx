@@ -1,14 +1,21 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Header from "@/components/Header";
 
-export default function Home() {
+const Home: NextPage = () => {
   return (
     <div>
       <Head>
         <title>Vince's Portfolio</title>
       </Head>
+      {/* Header */}
+      <Header />
 
-      <h1> Hello World </h1>
+      {/* Hero */}
+
+      {/* About */}
     </div>
   );
-}
+};
+
+export default Home;
