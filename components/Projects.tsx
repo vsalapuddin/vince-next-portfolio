@@ -4,7 +4,15 @@ import { motion } from "framer-motion";
 type Props = {};
 
 function Projects({}: Props) {
+  const projectPic = [
+    "/c++.png",
+    "/c++.png",
+    "/c++.png",
+    "/c++.png",
+    "/c++.png",
+  ];
   const projects = ["Quality Checker", "Git", "ProjectZ", "Zed", "WOW"];
+  const projectDesc = ["HELLOOO", "2", "3", "4", "5"];
   return (
     <motion.div
       className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly
@@ -21,14 +29,14 @@ function Projects({}: Props) {
               initial={{ x: -300, opacity: 0 }}
               transition={{ duration: 1.2 }}
               whileInView={{ opacity: 1, x: 0 }}
-              src="/aiphoto.jpeg"
+              src={projectPic[i]}
               className="h-64 w-64"
             />
             <div className="space-y-10 px-0 md:px-10 max-w-6xl">
               <h4 className="text-4xl font-semibold text-center">
                 {projects[i]}
               </h4>
-              <p> Project Description will lie here</p>
+              <p>{projectDesc[i]}</p>
             </div>
           </div>
         ))}

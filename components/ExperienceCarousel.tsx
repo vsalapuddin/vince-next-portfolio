@@ -18,7 +18,7 @@ export default function ExperienceCarousel({}: Props) {
           <img className="h-8 w-8 rounded-full" src="/aiphoto.jpeg/" />
           <img className="h-8 w-8 rounded-full" src="/aiphoto.jpeg/" />
         </div>
-        <p className="uppercase text-gray-300">Started work ... - Ended</p>
+        <p className="uppercase text-gray-300">Jul 2022 - Present</p>
         <ul className="list-disc ml-5 text-sm">
           <li>Summary Points</li>
           <li>Summary Points</li>

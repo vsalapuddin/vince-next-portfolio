@@ -18,9 +18,6 @@ export default function Experience({}: Props) {
 
       <div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar scrollbar-thin scrollbar-thumb-[#32CD32]">
         <ExperienceCarousel />
-        <ExperienceCarousel />
-        <ExperienceCarousel />
-        <ExperienceCarousel />
       </div>
     </motion.div>
   );
