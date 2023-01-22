@@ -10,7 +10,7 @@ export default function About({}: Props) {
         initial={{ x: -200, opacity: 0 }}
         transition={{ duration: 1.6 }}
         whileInView={{ opacity: 1, x: 0 }}
-        className="flex flex-col relative h-screen text-cennter md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center"
+        className="flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center"
       >
         <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
           About Me
@@ -20,7 +20,7 @@ export default function About({}: Props) {
           transition={{ duration: 2 }}
           whileInView={{ opacity: 1, x: 0 }}
           src="/about.jpeg"
-          className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[500px]"
+          className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[400px] xl:h-[400px]"
         />
         <motion.div
           initial={{ x: 600, opacity: 0 }}
@@ -28,7 +28,7 @@ export default function About({}: Props) {
           whileInView={{ opacity: 1, x: 0 }}
           className="space-y-10 px-0 md:px-10"
         >
-          <p className="text-md font-sans leading-loose">
+          <p className="text-sm font-sans leading-loose">
             As a highly motivated computer science graduate from the University
             of Florida, I bring a diverse range of skill sets which I acquired
             from my experiences. My experience as a web developer for the

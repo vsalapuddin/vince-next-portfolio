@@ -22,12 +22,12 @@ function Skills({}: Props) {
       </h3>
 
       <div className="grid grid-cols-3 gap-5">
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
+        <Skill skill="c++" />
+        <Skill skill="react" />
+        <Skill skill="node" />
+        <Skill skill="git" />
+        <Skill skill="matui" />
+        <Skill skill="c++" />
       </div>
     </motion.div>
   );

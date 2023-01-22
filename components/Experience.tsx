@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import ExperienceCarousel from "./ExperienceCarousel";
+import UFIT from "./Experiences/ufit";
+import Infotech from "./Experiences/infotech";
 
 type Props = {};
 
@@ -16,8 +17,9 @@ export default function Experience({}: Props) {
         Experience
       </h3>
 
-      <div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar scrollbar-thin scrollbar-thumb-[#32CD32]">
-        <ExperienceCarousel />
+      <div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar-thin scrollbar-thumb-[#32CD32]">
+        <UFIT />
+        <Infotech />
       </div>
     </motion.div>
   );
