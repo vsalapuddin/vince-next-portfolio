@@ -20,12 +20,12 @@ export default function ufit({}: Props) {
         <p className="uppercase text-gray-300">Jan 2022 - Jul 2022</p>
         <ul className="list-disc ml-5 text-sm">
           <li>
-            Working within an enterprise system to develop solutions for UF’s
+            Worked within an enterprise system to develop solutions for UF’s
             database architecture.
           </li>
           <li>
-            Researching and designing an application for delivering on-demand
-            tax forms to students.
+            Researched and designed an application for delivering on-demand tax
+            forms to students.
           </li>
         </ul>
       </div>

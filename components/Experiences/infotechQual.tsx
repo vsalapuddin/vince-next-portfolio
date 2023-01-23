@@ -20,11 +20,11 @@ export default function infotech({}: Props) {
         <p className="uppercase text-gray-300">May 2020 - May 2021</p>
         <ul className="list-disc ml-5 text-sm">
           <li>
-            Creating UI and API tests for Infotech while streamlining the test
+            Created UI and API tests for Infotech while streamlining the test
             checking process.
           </li>
           <li>
-            Testing the accessibility for Infotech sites using accessibility
+            Tested the accessibility for Infotech sites using accessibility
             insights for web.
           </li>
         </ul>
