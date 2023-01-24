@@ -44,12 +44,7 @@ const skills = [
 
 function Skills({}: Props) {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      transition={{ duration: 1.5 }}
-      whileInView={{ opacity: 1 }}
-      className="h-screen"
-    >
+    <motion.div className="h-screen">
       <div className="max-w-screen-log mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
         <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl text-center">
           Skills
@@ -60,7 +55,10 @@ function Skills({}: Props) {
               key={id}
               className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
             >
-              <img
+              <motion.img
+                initial={{ x: -200, opacity: 0 }}
+                transition={{ duration: 1 }}
+                whileInView={{ x: 0, opacity: 1 }}
                 src={`/iconSkills/${src}.png`}
                 alt="skills"
                 className="w-20 mx-auto"
