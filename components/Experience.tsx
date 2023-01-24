@@ -25,7 +25,7 @@ export default function Experience({}: Props) {
         initial={{ x: 500, opacity: 0 }}
         transition={{ duration: 1 }}
         whileInView={{ x: 0, opacity: 1 }}
-        className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory no-scrollbar"
+        className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar-thin scrollbar-thumb-[#32CD32]"
       >
         <UFIT />
         <UFITIntern />
