@@ -48,7 +48,7 @@ function Skills({}: Props) {
       initial={{ opacity: 0 }}
       transition={{ duration: 1.5 }}
       whileInView={{ opacity: 1 }}
-      className="bg-gradient-to-b from-gray-800 to-black w-full h-screen"
+      className="h-screen"
     >
       <div className="max-w-screen-log mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
         <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl text-center">
