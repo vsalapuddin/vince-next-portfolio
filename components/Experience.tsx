@@ -28,11 +28,8 @@ export default function Experience({}: Props) {
       <Swiper
         slidesPerView={2}
         grabCursor={true}
+        loop={true}
         spaceBetween={150}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination]}
         className="mySwiper mx-auto p-4 flex flex-col justify-center  text-white"
       >
         <SwiperSlide>
