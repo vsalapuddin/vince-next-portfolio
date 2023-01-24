@@ -6,6 +6,10 @@ import UFITIntern from "./Experiences/ufitIntern";
 import InfotechQual from "./Experiences/infotechQual";
 import CityTraffic from "./Experiences/cityTraffic";
 import IFAS from "./Experiences/ifas";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper";
+import "swiper/css";
+import "swiper/css/pagination";
 
 type Props = {};
 
@@ -21,19 +25,35 @@ export default function Experience({}: Props) {
         Experience
       </h3>
 
-      <motion.div
-        initial={{ x: 500, opacity: 0 }}
-        transition={{ duration: 1 }}
-        whileInView={{ x: 0, opacity: 1 }}
-        className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory no-scrollbar"
+      <Swiper
+        slidesPerView={2}
+        grabCursor={true}
+        spaceBetween={150}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination]}
+        className="mySwiper mx-auto p-4 flex flex-col justify-center  text-white"
       >
-        <UFIT />
-        <UFITIntern />
-        <Infotech />
-        <InfotechQual />
-        <CityTraffic />
-        <IFAS />
-      </motion.div>
+        <SwiperSlide>
+          <UFIT />
+        </SwiperSlide>
+        <SwiperSlide>
+          <UFITIntern />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Infotech />
+        </SwiperSlide>
+        <SwiperSlide>
+          <InfotechQual />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CityTraffic />
+        </SwiperSlide>
+        <SwiperSlide>
+          <IFAS />
+        </SwiperSlide>
+      </Swiper>
     </motion.div>
   );
 }
