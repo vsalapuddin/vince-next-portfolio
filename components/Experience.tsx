@@ -21,7 +21,7 @@ export default function Experience({}: Props) {
         Experience
       </h3>
 
-      <div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar-thin scrollbar-thumb-[#32CD32]">
+      <div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory no-scrollbar">
         <UFIT />
         <UFITIntern />
         <Infotech />
