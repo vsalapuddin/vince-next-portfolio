@@ -36,8 +36,8 @@ const skills = [
   },
   {
     id: 6,
-    src: "git",
-    title: "Git",
+    src: "sql",
+    title: "SQL",
     style: "shadow-orange-500",
   },
 ];
