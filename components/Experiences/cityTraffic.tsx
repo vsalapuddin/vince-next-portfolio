@@ -7,7 +7,7 @@ export default function ufit({}: Props) {
     <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden">
       <img
         className="w-24 h-24 rounded-full xl:w-[150px] xl:h-[150px] object-cover object-center"
-        src="/Experience/cityTraffic.jpeg"
+        src="/Experience/city-traffic.jpeg"
       />
       <div className="px-0 md:px-10">
         <h4 className="text-3xl font-light">City Traffic</h4>

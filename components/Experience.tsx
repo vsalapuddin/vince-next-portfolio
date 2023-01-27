@@ -4,7 +4,7 @@ import UFIT from "./Experiences/ufit";
 import Infotech from "./Experiences/infotech";
 import UFITIntern from "./Experiences/ufitIntern";
 import InfotechQual from "./Experiences/infotechQual";
-import CityTraffic from "./Experiences/cityTraffic";
+import CityTraffic from "./Experiences/city-traffic";
 import IFAS from "./Experiences/ifas";
 
 type Props = {};
