@@ -5,65 +5,65 @@ type Props = {};
 
 const skills = [
   {
-    id: 1,
     src: "react",
+    count: 75,
     title: "React",
-    style: "shadow-blue-500",
   },
   {
-    id: 2,
     src: "node",
+    count: 45,
     title: "Node",
-    style: "shadow-green-500",
   },
   {
-    id: 3,
     src: "matui",
+    count: 75,
     title: "Material Ui",
-    style: "shadow-blue-500",
   },
   {
-    id: 4,
     src: "git",
+    count: 85,
     title: "Git",
-    style: "shadow-orange-500",
   },
   {
-    id: 5,
     src: "c++",
+    count: 85,
     title: "C++",
-    style: "shadow-blue-500",
   },
   {
-    id: 6,
     src: "sql",
+    count: 60,
     title: "SQL",
-    style: "shadow-orange-500",
   },
 ];
 
 function Skills({}: Props) {
   return (
     <motion.div className="h-screen">
-      <div className="max-w-screen-log mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
+      <div className="max-w-screen-log mx-auto p-4 flex flex-col justify-center w-full h-full text-gray-500">
         <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl text-center">
           Skills
         </h3>
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
-          {skills.map(({ id, src, title, style }) => (
-            <div
-              key={id}
-              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
-            >
-              <motion.img
-                initial={{ x: -200, opacity: 0 }}
-                transition={{ duration: 1 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                src={`/iconSkills/${src}.png`}
-                alt="skills"
-                className="w-20 mx-auto"
-              />
-              <p className="mt-4">{title}</p>
+        <div className="flex items-center justify-center mt-8 gap-6 flex-wrap">
+          {skills?.map((skill, i) => (
+            <div key={i} className="text-center">
+              <div
+                style={{
+                  background: `conic-gradient(rgb(50,205,50) ${skill.count}%, transparent ${skill.count}%)`,
+                }}
+                className="w-32 h-32 flex items-center justify-center rounded-full"
+              >
+                <div className="text-6xl w-28 h-28 bg-gray-900 rounded-full flex items-center justify-center">
+                  <motion.img
+                    initial={{ x: -200, opacity: 0 }}
+                    transition={{ duration: 1 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    src={`/iconSkills/${skill.src}.png`}
+                    alt="skills"
+                    className="w-20 mx-auto"
+                  />
+                </div>
+              </div>
+              <p className="text-xl mt-3">{skill.title}</p>
             </div>
           ))}
         </div>
