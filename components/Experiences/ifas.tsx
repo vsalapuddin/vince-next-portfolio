@@ -4,8 +4,7 @@ type Props = {};
 
 export default function ifas({}: Props) {
   return (
-    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-10 duration-200 overflow-hidden">
-      {" "}
+    <article className="flex flex-col rounded-lg items-center space-y-7 snap-center bg-[#292929] p-10 overflow-hidden">
       <img
         className="w-24 h-24 rounded-full xl:w-[150px] xl:h-[150px] object-cover object-center"
         src="/Experience/fnp.jpeg"

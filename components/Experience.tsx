@@ -14,7 +14,7 @@ type Props = {};
 export default function Experience({}: Props) {
   return (
     <div className="h-screen flex flex-col justify-center">
-      <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl text-center">
+      <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl text-center mb-8">
         Experience
       </h3>
       <div className="flex max-w-full">
