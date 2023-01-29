@@ -13,7 +13,7 @@ export default function Hero({}: Props) {
       className="h-screen flex flex-col space-y-8 items-center justify-center"
     >
       <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
-        Web Developer
+        Software Developer
       </h2>
       <h1 className="text-5xl lg:text-6xl font-semibold -px-10">
         Vince Salapuddin
