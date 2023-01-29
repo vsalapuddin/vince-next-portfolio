@@ -44,11 +44,11 @@ export default function Projects({}: Props) {
   ];
   return (
     <div className="h-screen">
-      <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl text-center">
-        Projects
-      </h3>
-      <div className="flex max-w-6xl gap-6 px-5 mx-auto items-center relative">
-        <div className="w-full">
+      <div className="max-w-screen-log mx-auto p-4 flex flex-col justify-center w-full h-full text-gray-500">
+        <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl text-center">
+          Projects
+        </h3>
+        <div className="flex items-center justify-center mt-8 gap-6 flex-wrap">
           <Swiper
             slidesPerView={1}
             spaceBetween={0}
