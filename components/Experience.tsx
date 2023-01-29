@@ -6,34 +6,49 @@ import UFITIntern from "./Experiences/ufitIntern";
 import InfotechQual from "./Experiences/infotechQual";
 import CityTraffic from "./Experiences/cityTraffic";
 import IFAS from "./Experiences/ifas";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper";
 
 type Props = {};
 
 export default function Experience({}: Props) {
   return (
-    <motion.div
-      initial={{ x: -200, opacity: 0 }}
-      transition={{ duration: 1 }}
-      whileInView={{ x: 0, opacity: 1 }}
-      className="h-screen flex relative overflow-hidden flex-col text-lft md:flex-row max-w-full px-10 justify-evenly mx-auto items-center"
-    >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+    <div className="h-screen flex flex-col justify-center">
+      <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl text-center">
         Experience
       </h3>
-
-      <motion.div
-        initial={{ x: 500, opacity: 0 }}
-        transition={{ duration: 1 }}
-        whileInView={{ x: 0, opacity: 1 }}
-        className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar-thin scrollbar-thumb-[#32CD32]"
-      >
-        <UFIT />
-        <UFITIntern />
-        <Infotech />
-        <InfotechQual />
-        <CityTraffic />
-        <IFAS />
-      </motion.div>
-    </motion.div>
+      <div className="flex max-w-full">
+        <Swiper
+          slidesPerView={1}
+          loop={true}
+          autoplay={{
+            delay: 3000,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Pagination, Autoplay]}
+        >
+          <SwiperSlide>
+            <UFIT />
+          </SwiperSlide>
+          <SwiperSlide>
+            <UFITIntern />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Infotech />
+          </SwiperSlide>
+          <SwiperSlide>
+            <InfotechQual />
+          </SwiperSlide>
+          <SwiperSlide>
+            <CityTraffic />
+          </SwiperSlide>
+          <SwiperSlide>
+            <IFAS />
+          </SwiperSlide>
+        </Swiper>
+      </div>
+    </div>
   );
 }

@@ -4,7 +4,7 @@ type Props = {};
 
 export default function ufit({}: Props) {
   return (
-    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden">
+    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-10 duration-200 overflow-hidden">
       <img
         className="w-24 h-24 rounded-full xl:w-[150px] xl:h-[150px] object-cover object-center"
         src="/Experience/city-traffic.jpeg"
