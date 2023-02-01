@@ -5,9 +5,7 @@ import { Pagination, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 
-type Props = {};
-
-export default function Projects({}: Props) {
+export default function Projects({}) {
   const projects = [
     {
       name: "OpenAir Project",
@@ -42,7 +40,12 @@ export default function Projects({}: Props) {
     },
   ];
   return (
-    <div className="h-screen py-10 text-white">
+    <motion.div
+      initial={{ x: 200, opacity: 0 }}
+      transition={{ duration: 1.6 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      className="h-screen py-10 text-white"
+    >
       <div className="max-w-screen-log mx-auto p-4 flex flex-col justify-center w-full h-full text-white-500">
         <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl text-center">
           Projects
@@ -89,6 +92,6 @@ export default function Projects({}: Props) {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

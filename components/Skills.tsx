@@ -38,7 +38,12 @@ const skills = [
 
 function Skills({}: Props) {
   return (
-    <motion.div className="h-screen">
+    <motion.div
+      initial={{ x: 200, opacity: 0 }}
+      transition={{ duration: 1.6 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      className="h-screen"
+    >
       <div className="max-w-screen-log mx-auto p-4 flex flex-col justify-center w-full h-full text-gray-500">
         <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl text-center">
           Skills

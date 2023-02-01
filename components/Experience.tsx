@@ -9,9 +9,7 @@ import IFAS from "./Experiences/ifas";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper";
 
-type Props = {};
-
-export default function Experience({}: Props) {
+export default function Experience({}) {
   return (
     <motion.div
       initial={{ x: -200, opacity: 0 }}

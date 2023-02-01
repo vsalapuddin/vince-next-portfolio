@@ -1,11 +1,8 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
-import Link from "next/link";
 
-type Props = {};
-
-export default function Header({}: Props) {
+export default function Header({}) {
   return (
     <header className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
       <motion.div
@@ -16,16 +13,19 @@ export default function Header({}: Props) {
       >
         <SocialIcon
           url="https://twitter.com/VinceSalapuddin"
+          target="_blank"
           fgColor="gray"
           bgColor="transparent"
         ></SocialIcon>
         <SocialIcon
           url="https://github.com/vsalapuddin"
+          target="_blank"
           fgColor="gray"
           bgColor="transparent"
         ></SocialIcon>
         <SocialIcon
           url="https://www.linkedin.com/in/vincesalapuddin/"
+          target="_blank"
           fgColor="gray"
           bgColor="transparent"
         ></SocialIcon>
@@ -34,14 +34,14 @@ export default function Header({}: Props) {
         initial={{ x: 500, opacity: 0, scale: 0.5 }}
         animate={{ x: 0, opacity: 1, scale: 1 }}
         transition={{ duration: 1.5 }}
-        className="flex"
+        className="flex flex-row"
       >
         <button
-          className="px-4 uppercase tracking-widest
-     text-gray-500 hover:text-[#32CD32]"
+          className="px-6 py-2 border-[#242424] rounded-full uppercase tracking-widest
+     text-gray-500 transition-all hover:text-[#32CD32]"
         >
           <a href="/VinceSalapuddinResume.pdf" download>
-            resume
+            RESUME
           </a>
         </button>
       </motion.div>
