@@ -30,28 +30,21 @@ export default function Header({}: Props) {
           bgColor="transparent"
         ></SocialIcon>
       </motion.div>
-      <div className="flex ">
-        <button className="text-gray-500 flex flex-row items-center font-bold rounded-full p-2">
+      <motion.div
+        initial={{ x: 500, opacity: 0, scale: 0.5 }}
+        animate={{ x: 0, opacity: 1, scale: 1 }}
+        transition={{ duration: 1.5 }}
+        className="flex"
+      >
+        <button
+          className="px-4 uppercase tracking-widest
+     text-gray-500 hover:text-[#32CD32]"
+        >
           <a href="/VinceSalapuddinResume.pdf" download>
-            Resume
+            resume
           </a>
         </button>
-        <Link href="#contact" legacyBehavior>
-          <motion.div
-            initial={{ x: 500, opacity: 0, scale: 0.5 }}
-            animate={{ x: 0, opacity: 1, scale: 1 }}
-            transition={{ duration: 1.5 }}
-            className="flex flex-row items-center text-gray-300 cursor-pointer"
-          >
-            <SocialIcon
-              className="cursor-pointer"
-              network="email"
-              fgColor="gray"
-              bgColor="transparent"
-            />
-          </motion.div>
-        </Link>
-      </div>
+      </motion.div>
     </header>
   );
 }

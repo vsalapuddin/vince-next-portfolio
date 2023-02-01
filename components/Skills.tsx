@@ -46,7 +46,10 @@ function Skills({}: Props) {
         <div className="flex items-center justify-center mt-8 gap-6 flex-wrap">
           {skills?.map((skill, i) => (
             <div key={i} className="text-center">
-              <div
+              <motion.div
+                initial={{ x: 200, opacity: 0 }}
+                transition={{ duration: 1.6 }}
+                whileInView={{ opacity: 1, x: 0 }}
                 style={{
                   background: `conic-gradient(rgb(50,205,50) ${skill.count}%, transparent ${skill.count}%)`,
                 }}
@@ -62,7 +65,7 @@ function Skills({}: Props) {
                     className="w-20 mx-auto"
                   />
                 </div>
-              </div>
+              </motion.div>
               <p className="text-xl mt-3">{skill.title}</p>
             </div>
           ))}

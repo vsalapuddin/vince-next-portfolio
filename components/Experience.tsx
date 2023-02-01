@@ -13,11 +13,21 @@ type Props = {};
 
 export default function Experience({}: Props) {
   return (
-    <div className="h-screen flex flex-col justify-center">
+    <motion.div
+      initial={{ x: -200, opacity: 0 }}
+      transition={{ duration: 1 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      className="h-screen flex flex-col justify-center"
+    >
       <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl text-center mb-8">
         Experience
       </h3>
-      <div className="flex">
+      <motion.div
+        initial={{ x: 200, opacity: 0 }}
+        transition={{ duration: 1.6 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        className="flex"
+      >
         <Swiper
           slidesPerView={1}
           loop={true}
@@ -48,7 +58,7 @@ export default function Experience({}: Props) {
             <IFAS />
           </SwiperSlide>
         </Swiper>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
