@@ -63,7 +63,7 @@ export default function Projects({}: Props) {
             >
               {projects.map((project_info, i) => (
                 <SwiperSlide key={i}>
-                  <div className="h-fit w-full p-4 bg-slate-700 rounded-xl">
+                  <div className="h-fit w-full p-4 bg-[#292929] rounded-xl">
                     <h3 className="text-xl my-4">{project_info.name}</h3>
                     <p>{project_info.desc}</p>
                     <div className="flex gap-3">

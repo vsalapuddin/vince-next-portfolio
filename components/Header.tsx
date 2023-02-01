@@ -30,15 +30,8 @@ export default function Header({}: Props) {
           bgColor="transparent"
         ></SocialIcon>
       </motion.div>
-      <div className="flex">
-        <button className="text-gray-500 font-bold py-2 px-4 rounded-full inline-flex">
-          <svg
-            className="fill-current w-4 h-4 mr-2"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-          >
-            <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
-          </svg>
+      <div className="flex ">
+        <button className="text-gray-500 flex flex-row items-center font-bold rounded-full p-2">
           <a href="/VinceSalapuddinResume.pdf" download>
             Resume
           </a>

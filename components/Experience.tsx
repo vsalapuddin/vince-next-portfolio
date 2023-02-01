@@ -17,7 +17,7 @@ export default function Experience({}: Props) {
       <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl text-center mb-8">
         Experience
       </h3>
-      <div className="flex max-w-full">
+      <div className="flex">
         <Swiper
           slidesPerView={1}
           loop={true}

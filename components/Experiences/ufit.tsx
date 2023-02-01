@@ -21,13 +21,12 @@ export default function ufit({}: Props) {
         <p className="uppercase text-gray-300">Jul 2022 - Present</p>
         <ul className="list-disc ml-5 text-sm">
           <li>
-            Collaborating in an efficient agile environment to design, develop,
-            and deploy new features and resolve bugs for a web application with
-            a significant user base.
+            Collaborating in an agile environment to design, develop, and deploy
+            new features for a web application with a significant user base.
           </li>
           <li>
-            Designing and implementing a mobile application from the ground up,
-            catering to the needs of students, with a focus on user experience.
+            Designing and implementing a mobile application, catering to the
+            needs of students, with a focus on user experience.
           </li>
         </ul>
       </div>
