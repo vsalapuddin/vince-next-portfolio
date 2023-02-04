@@ -4,7 +4,7 @@ type Props = {};
 
 export default function ufit({}: Props) {
   return (
-    <article className="flex flex-col rounded-lg items-center space-y-7 snap-center bg-[#292929] p-10 overflow-hidden">
+    <article className="flex flex-col rounded-lg items-center space-y-7 snap-center  p-10 overflow-hidden">
       <img
         className="w-24 h-24 rounded-full xl:w-[150px] xl:h-[150px] object-cover object-center"
         src="/Experience/ufit.png"
@@ -21,12 +21,20 @@ export default function ufit({}: Props) {
         <p className="uppercase text-gray-300">Jul 2022 - Present</p>
         <ul className="list-disc ml-5 text-sm">
           <li>
-            Collaborating in an agile environment to design, develop, and deploy
-            new features for a web application with a significant user base.
+            Collaborating in an agile environment to design and develop new
+            features for{" "}
+            <a
+              href="https://one.uf.edu/"
+              target="_blank"
+              className="font-medium text-orange-500 underline dark:text-orange-500 hover:no-underline"
+            >
+              ONE.UF
+            </a>
+            .
           </li>
           <li>
-            Designing and implementing a mobile application, catering to the
-            needs of students, with a focus on user experience.
+            Designing and implementing a mobile application using React Native
+            with Expo.
           </li>
         </ul>
       </div>
