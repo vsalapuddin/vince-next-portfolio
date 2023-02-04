@@ -29,16 +29,15 @@ export default function About({}: Props) {
           className="space-y-10 px-0 md:px-10"
         >
           <p className="text-sm font-sans leading-loose">
-            As a highly motivated computer science graduate from the University
-            of Florida, I bring a diverse range of skill sets which I acquired
-            from my experiences. My experience as a web developer for the
-            University of Florida's student portal and mobile application has
-            allowed me to master technologies such as React.js, React Native,
-            Node.js and MaterialUI. With my passion for coding, quick learning
-            ability and ability to excel in dynamic environments, I am confident
-            that I would be a valuable asset to any tech company and am excited
-            for the opportunity to interview and discuss how I can contribute to
-            your team.
+            Hello, my name is Vince Salapuddin and I am a highly motivated
+            computer science graduate from the University of Florida. I am
+            currently working as a software developer for the University of
+            Florida, working in an agile environment, creating features for the
+            student portal and developing a mobile application. With my passion
+            for development, capacity to learn quickly, and ability to excel in
+            dynamic environments, I am confident that I would be a valuable
+            member to any team and am excited for new opportunities to improve
+            my craft.
           </p>
         </motion.div>
       </motion.div>

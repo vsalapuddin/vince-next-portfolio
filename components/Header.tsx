@@ -37,7 +37,7 @@ export default function Header({}) {
         className="flex flex-row"
       >
         <button
-          className="px-6 py-2 border-[#242424] rounded-full uppercase tracking-widest
+          className="px-6 py-3 border-[#242424] rounded-full uppercase tracking-widest
      text-gray-500 transition-all hover:text-[#32CD32]"
         >
           <a href="/VinceSalapuddinResume.pdf" download>
