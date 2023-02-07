@@ -25,6 +25,11 @@ const skills = [
     title: "Git",
   },
   {
+    src: "typescript",
+    count: 80,
+    title: "TypeScript",
+  },
+  {
     src: "html",
     count: 75,
     title: "HTML",
@@ -43,6 +48,11 @@ const skills = [
     src: "postman",
     count: 70,
     title: "Postman",
+  },
+  {
+    src: "tailwind",
+    count: 65,
+    title: "Tailwind CSS",
   },
   {
     src: "sql",
