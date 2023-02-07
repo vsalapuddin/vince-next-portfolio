@@ -91,9 +91,9 @@ function Skills({}: Props) {
                 style={{
                   background: `conic-gradient(rgb(50,205,50) ${skill.count}%, transparent ${skill.count}%)`,
                 }}
-                className="w-16 h-16 md:max-2xl:w-24 md:max-2xl:h-24 flex items-center justify-center rounded-full"
+                className="w-16 h-16 md:w-24 md:h-24 flex items-center justify-center rounded-full"
               >
-                <div className="text-6xl p-2 md:max-2xl:p-1.5 w-12 h-12 md:max-2xl:w-20 md:max-2xl:h-20 bg-gray-900 rounded-full flex items-center justify-center">
+                <div className="text-6xl p-2 md:p-1.5 w-12 h-12 md:w-20 md:h-20 bg-gray-900 rounded-full flex items-center justify-center">
                   <motion.img
                     initial={{ opacity: 0 }}
                     transition={{ duration: 1 }}
@@ -103,7 +103,7 @@ function Skills({}: Props) {
                   />
                 </div>
               </div>
-              <p className="mt-3 text-sm md:max-2xl:text-lg">{skill.title}</p>
+              <p className="mt-3 text-sm md:text-lg">{skill.title}</p>
             </motion.div>
           ))}
         </div>
