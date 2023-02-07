@@ -1,5 +1,5 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useState } from "react";
+import { motion, useMotionValue, transform, useSpring } from "framer-motion";
 
 type Props = {};
 
@@ -67,6 +67,7 @@ const skills = [
 ];
 
 function Skills({}: Props) {
+  const x = useSpring(0);
   return (
     <motion.div
       initial={{ x: 200, opacity: 0 }}
@@ -81,14 +82,18 @@ function Skills({}: Props) {
         <div className="mt-8 grid grid-cols-4 flex-wrap">
           {skills?.map((skill, i) => (
             <motion.div
-              initial={{ x: 200, opacity: 0 }}
-              transition={{ duration: 1.6 }}
+              initial={{ opacity: 0 }}
+              transition={{ duration: 1 }}
               whileInView={{ opacity: 1, x: 0 }}
               key={i}
               className="text-center mx-4 my-1"
             >
-              <div
-                style={{
+              <motion.div
+                initial={{
+                  background: `conic-gradient(rgb(50,205,50) 0%, transparent 0%)`,
+                }}
+                transition={{ duration: 1.6 }}
+                whileInView={{
                   background: `conic-gradient(rgb(50,205,50) ${skill.count}%, transparent ${skill.count}%)`,
                 }}
                 className="w-16 h-16 md:w-24 md:h-24 flex items-center justify-center rounded-full"
@@ -102,7 +107,7 @@ function Skills({}: Props) {
                     alt="skills"
                   />
                 </div>
-              </div>
+              </motion.div>
               <p className="mt-3 text-sm md:text-lg">{skill.title}</p>
             </motion.div>
           ))}
