@@ -71,7 +71,7 @@ function Skills({}: Props) {
   return (
     <motion.div
       initial={{ x: 200, opacity: 0 }}
-      transition={{ duration: 1.6 }}
+      transition={{ duration: 1 }}
       whileInView={{ opacity: 1, x: 0 }}
       className="h-screen"
     >
@@ -92,7 +92,7 @@ function Skills({}: Props) {
                 initial={{
                   background: `conic-gradient(rgb(50,205,50) 0%, transparent 0%)`,
                 }}
-                transition={{ duration: 1.6 }}
+                transition={{ duration: 1.5 }}
                 whileInView={{
                   background: `conic-gradient(rgb(50,205,50) ${skill.count}%, transparent ${skill.count}%)`,
                 }}

@@ -22,7 +22,7 @@ export default function Experience({}) {
       </h3>
       <motion.div
         initial={{ x: 200, opacity: 0 }}
-        transition={{ duration: 1.6 }}
+        transition={{ duration: 1 }}
         whileInView={{ opacity: 1, x: 0 }}
         className="flex"
       >

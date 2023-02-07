@@ -8,7 +8,7 @@ export default function About({}: Props) {
     <header className="p-5 flex items-start justify-between ">
       <motion.div
         initial={{ x: -200, opacity: 0 }}
-        transition={{ duration: 1.6 }}
+        transition={{ duration: 1 }}
         whileInView={{ opacity: 1, x: 0 }}
         className="flex flex-col relative h-screen md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center"
       >
@@ -17,14 +17,14 @@ export default function About({}: Props) {
         </h3>
         <motion.img
           initial={{ x: -200, opacity: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 1 }}
           whileInView={{ opacity: 1, x: 0 }}
           src="/about.jpeg"
           className=" mt-20 -mb-10 md:mt-0 md:mb-0 flex-shrink-0 w-36 h-36 rounded-full object-cover md:rounded-lg md:w-64 md:h-64 xl:w-[400px] xl:h-[400px]"
         />
         <motion.div
           initial={{ x: 200, opacity: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 1 }}
           whileInView={{ opacity: 1, x: 0 }}
           className="space-y-10 px-0 md:px-10 w-full"
         >

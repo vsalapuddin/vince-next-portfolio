@@ -22,7 +22,7 @@ function Contact({}) {
   return (
     <motion.div
       initial={{ x: 200, opacity: 0 }}
-      transition={{ duration: 1.6 }}
+      transition={{ duration: 1 }}
       whileInView={{ opacity: 1, x: 0 }}
       className="h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center"
     >
