@@ -50,7 +50,7 @@ export default function Projects({}) {
         <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl text-center">
           Projects
         </h3>
-        <div className="flex max-w-6xl gap-6 px-5 mx-auto items-center relative">
+        <div className="flex max-w-3xl gap-6 px-5 mx-auto items-center relative">
           <div className="w-full">
             <Swiper
               slidesPerView={1}
@@ -66,7 +66,7 @@ export default function Projects({}) {
             >
               {projects.map((project_info, i) => (
                 <SwiperSlide key={i}>
-                  <div className="h-fit w-full p-4 bg-[#292929] rounded-xl">
+                  <div className="h-48 w-300 p-4 bg-[#292929] rounded-xl position-absolute">
                     <h3 className="text-xl my-4">{project_info.name}</h3>
                     <p>{project_info.desc}</p>
                     <div className="flex gap-3">
