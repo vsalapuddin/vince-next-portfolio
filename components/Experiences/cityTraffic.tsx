@@ -18,7 +18,7 @@ export default function ufit({}: Props) {
           <img className="h-8 w-8" src="/iconSkills/python.png" />
         </div>
         <p className="uppercase text-gray-300">Jan 2020 - May 2020</p>
-        <ul className="list-disc ml-5 text-sm">
+        <ul className="text-sm">
           <li>
             Developed an application to handle real-time data information for
             motor vehicle accidents.

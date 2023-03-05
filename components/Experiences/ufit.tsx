@@ -19,7 +19,7 @@ export default function ufit({}: Props) {
           <img className="h-8 w-8" src="/iconSkills/git.png" />
         </div>
         <p className="uppercase text-gray-300">Jul 2022 - Present</p>
-        <ul className="list-disc ml-5 text-sm">
+        <ul className="text-sm">
           <li>
             Collaborating in an agile environment to design and develop new
             features for the student portal.

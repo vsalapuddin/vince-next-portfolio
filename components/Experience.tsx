@@ -16,12 +16,12 @@ export default function Experience({}) {
         initial={{ y: 200, opacity: 0 }}
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1, y: 0 }}
-        className="h-screen flex flex-col justify-center"
+        className="h-screen flex flex-col justify-center items-center"
       >
         <h3 className="uppercase tracking-[15px] md:tracking-[20px] text-gray-500 text-2xl text-center mb-8">
           Experience
         </h3>
-        <div className="flex">
+        <div className="flex border rounded-lg max-w-xl">
           <Swiper
             slidesPerView={1}
             loop={true}

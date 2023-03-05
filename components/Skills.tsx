@@ -60,11 +60,6 @@ const skills = [
     title: "Node",
   },
   {
-    src: "vue",
-    count: 55,
-    title: "Vue",
-  },
-  {
     src: "python",
     count: 45,
     title: "Python",

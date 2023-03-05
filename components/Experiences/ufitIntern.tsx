@@ -16,7 +16,7 @@ export default function ufit({}: Props) {
           <img className="h-8 w-8" src="/iconSkills/sql.png" />
         </div>
         <p className="uppercase text-gray-300">Jan 2022 - Jul 2022</p>
-        <ul className="list-disc ml-5 text-sm">
+        <ul className="text-sm">
           <li>
             Worked within an enterprise system to develop solutions for UF’s
             database architecture.

@@ -17,7 +17,7 @@ export default function infotech({}: Props) {
           <img className="h-8 w-8" src="/iconSkills/python.png" />
         </div>
         <p className="uppercase text-gray-300">May 2020 - May 2021</p>
-        <ul className="list-disc ml-5 text-sm">
+        <ul className="text-sm">
           <li>
             Created UI and API tests for Infotech while streamlining the test
             checking process.
