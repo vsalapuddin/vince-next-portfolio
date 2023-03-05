@@ -24,20 +24,51 @@ export default function Hero({}: Props) {
           <h1 className="text-4xl lg:text-6xl font-semibold text-center">
             Vince Salapuddin
           </h1>
-          {/* implement smooth scrolling */}
           <div className="pt-5 text-center">
-            <Link href="#about">
-              <button className="heroButton">About</button>
-            </Link>
-            <Link href="#experience">
-              <button className="heroButton">Experience</button>
-            </Link>
-            <Link href="#skills">
-              <button className="heroButton">Skills</button>
-            </Link>
-            <Link href="#projects">
-              <button className="heroButton">Projects</button>
-            </Link>
+            <a
+              href="/"
+              onClick={(e) => {
+                let hero = document.getElementById("about");
+                e.preventDefault();
+                hero && hero.scrollIntoView();
+              }}
+              className="heroButton"
+            >
+              About
+            </a>
+            <a
+              href="/"
+              onClick={(e) => {
+                let hero = document.getElementById("experience");
+                e.preventDefault();
+                hero && hero.scrollIntoView();
+              }}
+              className="heroButton"
+            >
+              Experience
+            </a>
+            <a
+              href="/"
+              onClick={(e) => {
+                let hero = document.getElementById("skills");
+                e.preventDefault();
+                hero && hero.scrollIntoView();
+              }}
+              className="heroButton"
+            >
+              Skills
+            </a>
+            <a
+              href="/"
+              onClick={(e) => {
+                let hero = document.getElementById("projects");
+                e.preventDefault();
+                hero && hero.scrollIntoView();
+              }}
+              className="heroButton"
+            >
+              Projects
+            </a>
           </div>
         </div>
         <div>

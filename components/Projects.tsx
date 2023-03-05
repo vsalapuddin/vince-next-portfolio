@@ -9,19 +9,15 @@ export default function Projects({}) {
   const projects = [
     {
       name: "Web3 Kahoot",
-      desc: `Developed a time-entry application for employees for faster, more accurate timesheets. Utilized Vue as well as multiple API integrations for a clean and efficient user experience.`,
+      desc: `Developed an application implementing the concept of Kahoot style quizzes using Web3 technologies.`,
     },
     {
-      name: "OpenAir Project",
-      desc: `Developed a time-entry application for employees for faster, more accurate timesheets. Utilized Vue as well as multiple API integrations for a clean and efficient user experience.`,
-    },
-    {
-      name: "UF Directory App",
-      desc: "Developed a directory app using the MERN (MongoDB, Express, Angular, Node.js) stack. Utilized git as version control for this full-stack web app.",
+      name: "Crypto Site",
+      desc: "Developed a website that allows users to compare bitcoin price to other sets of data and analyze the relationship.",
     },
     {
       name: "Minesweeper",
-      desc: "C++ with Simple and Fast Multimedia Library to create a standard minesweeper game. ",
+      desc: "C++ with Simple and Fast Multimedia Library (SFML) to create a standard minesweeper game. ",
     },
     {
       name: "File I/O Quality Checker ",
@@ -43,10 +39,10 @@ export default function Projects({}) {
         className="flex flex-col relative h-screen justify-center mx-auto items-center"
       >
         <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl text-center mb-8">
-          Projects
+          Personal Projects
         </h3>
-        <div className="flex max-w-xs md:max-w-3xl gap-6 mx-auto items-center relative">
-          <div className="w-full border rounded-lg">
+        <div className="flex max-w-xs md:max-w-3xl gap-6 mx-auto items-center relative bg-[#292929]">
+          <div className="max-w-xl rounded-lg">
             <Swiper
               slidesPerView={1}
               spaceBetween={0}
@@ -54,14 +50,17 @@ export default function Projects({}) {
                 clickable: true,
               }}
               loop={true}
-              autoplay={{
-                delay: 3000,
-              }}
               modules={[Pagination, Autoplay]}
             >
               {projects.map((project_info, i) => (
-                <SwiperSlide key={i} className="mb-10">
-                  <div className="h-48 p-4 bg-[#292929] rounded-xl position-absolute">
+                <SwiperSlide
+                  key={i}
+                  className="mb-10 flex-row flex items-center"
+                >
+                  <div>
+                    <img className="h-16 w-32 m-2" src="/phone.png" />
+                  </div>
+                  <div className="h-48 p-4 rounded-xl position-absolute ">
                     <h3 className="text-xl my-0 md:my-4">
                       {project_info.name}
                     </h3>
