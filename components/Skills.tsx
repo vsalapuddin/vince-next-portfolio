@@ -67,7 +67,6 @@ const skills = [
 ];
 
 function Skills({}: Props) {
-  const x = useSpring(0);
   return (
     <header className="p-5 flex items-start justify-between">
       <motion.div
@@ -90,11 +89,11 @@ function Skills({}: Props) {
             >
               <motion.div
                 initial={{
-                  background: `conic-gradient(rgb(50,205,50) 0%, transparent 0%)`,
+                  background: `conic-gradient(rgb(182, 158, 255) 0%, transparent 0%)`,
                 }}
                 transition={{ duration: 1.5 }}
                 whileInView={{
-                  background: `conic-gradient(rgb(50,205,50) ${skill.count}%, transparent ${skill.count}%)`,
+                  background: `conic-gradient(rgb(182, 158, 255) ${skill.count}%, transparent ${skill.count}%)`,
                 }}
                 className="w-16 h-16 md:w-24 md:h-24 flex items-center justify-center rounded-full"
               >

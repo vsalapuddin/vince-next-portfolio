@@ -21,13 +21,17 @@ function Contact({}) {
       className="h-screen flex flex-col justify-center mx-auto items-center"
     >
       <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl mb-8">
-        Lets Talk!
+        Get In Touch
       </h3>
+      <p className="text-m text-gray-400 mb-8">
+        My inbox is always open. Whether you have a question or just want to
+        create your next idea together!
+      </p>
       <button
-        className="border border-gray-500 text-gray-500 font-bold py-2 px-4 rounded-lg transition duration-300 ease-in-out hover:text-[#32CD32] hover:border-gray-700"
+        className="border border-[#b69eff] text-[#b69eff] font-bold py-2 px-4 rounded-lg transition duration-300 ease-in-out hover:text-[#ffffff] hover:bg-[#b69eff]"
         onClick={EmailButton}
       >
-        Email me
+        Say Hello
       </button>
     </motion.div>
   );

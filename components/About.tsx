@@ -15,9 +15,9 @@ export default function About({}: Props) {
         <h3 className="uppercase tracking-[15px] md:tracking-[20px] text-gray-500 text-2xl mb-8">
           About Me
         </h3>
-        <div className="border p-4 rounded-lg">
+        <div className="border border-[#b69eff] p-4 rounded-lg">
           <div className="grid grid-rows-3 gap-4 max-w-xl">
-            <div className="border p-4 rounded-lg">
+            <div className="border border-[#b69eff] p-4 rounded-lg">
               <div className="flex flex-row">
                 <img className="h-16 w-16 m-2" src="/monitor.png" />
                 <div>
@@ -31,7 +31,7 @@ export default function About({}: Props) {
                 </div>
               </div>
             </div>
-            <div className="border p-4 rounded-lg">
+            <div className="border border-[#b69eff] p-4 rounded-lg">
               <div className="flex flex-row">
                 <img className="h-16 w-16 m-2" src="/iconSkills/react.png" />
                 <div>
@@ -45,7 +45,7 @@ export default function About({}: Props) {
                 </div>
               </div>
             </div>
-            <div className="border p-4 rounded-lg">
+            <div className="border border-[#b69eff] p-4 rounded-lg">
               <div className="flex flex-row">
                 <img className="h-16 w-16 m-2" src="/phone.png" />
                 <div>

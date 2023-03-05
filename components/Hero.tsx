@@ -73,9 +73,16 @@ export default function Hero({}: Props) {
         </div>
         <div>
           <div className="relative w-8 h-12">
-            <Link href="#about">
+            <a
+              href="/"
+              onClick={(e) => {
+                let hero = document.getElementById("about");
+                e.preventDefault();
+                hero && hero.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
               <div
-                className={`absolute inset-0 rounded-full bg-[#32CD32] ${
+                className={`absolute inset-0 rounded-full bg-[#b69eff] ${
                   isAnimating ? "animate-bounce" : ""
                 }`}
               ></div>
@@ -85,7 +92,7 @@ export default function Hero({}: Props) {
                   className={`text-gray-500 text-2xl ${"animate-bounce"}`}
                 />
               </div>
-            </Link>
+            </a>
           </div>
         </div>
       </div>

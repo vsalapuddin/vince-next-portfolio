@@ -5,7 +5,10 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      sans: ['"font-serif"', "font-serif"],
+    },
     extend: {},
   },
-  plugins: [require('tailwind-scrollbar'),],
+  plugins: [require("tailwind-scrollbar")],
 };

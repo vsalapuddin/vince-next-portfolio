@@ -18,7 +18,7 @@ export default function Header({}) {
         <SocialIcon
           url="https://twitter.com/VinceSalapuddin"
           target="_blank"
-          fgColor={isHovered ? "#32CD32" : "gray"}
+          fgColor={isHovered ? "#b69eff" : "gray"}
           bgColor="transparent"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
@@ -27,7 +27,7 @@ export default function Header({}) {
         <SocialIcon
           url="https://github.com/vsalapuddin"
           target="_blank"
-          fgColor={isHovered2 ? "#32CD32" : "gray"}
+          fgColor={isHovered2 ? "#b69eff" : "gray"}
           bgColor="transparent"
           onMouseEnter={() => setIsHovered2(true)}
           onMouseLeave={() => setIsHovered2(false)}
@@ -36,7 +36,7 @@ export default function Header({}) {
         <SocialIcon
           url="https://www.linkedin.com/in/vincesalapuddin/"
           target="_blank"
-          fgColor={isHovered3 ? "#32CD32" : "gray"}
+          fgColor={isHovered3 ? "#b69eff" : "gray"}
           bgColor="transparent"
           onMouseEnter={() => setIsHovered3(true)}
           onMouseLeave={() => setIsHovered3(false)}
@@ -51,7 +51,7 @@ export default function Header({}) {
       >
         <button
           className="px-6 py-3 border-[#242424] rounded-full uppercase tracking-widest
-     text-gray-500 transition-all hover:text-[#32CD32]"
+     text-gray-500 transition-all hover:text-[#b69eff]"
         >
           <a href="/VinceSalapuddinResume.pdf" download>
             RESUME

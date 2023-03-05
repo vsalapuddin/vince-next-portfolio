@@ -17,7 +17,7 @@ export default function ifas({}: Props) {
           <img className="h-8 w-8" src="/iconSkills/excel.png" />
         </div>
         <p className="uppercase text-gray-300">May 2019 - May 2020</p>
-        <ul className="text-sm">
+        <ul className="text-m text-gray-400">
           <li>
             Collaborated with a small team to ensure data is inputted correctly
             and efficiently.
