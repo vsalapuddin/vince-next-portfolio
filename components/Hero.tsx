@@ -30,7 +30,7 @@ export default function Hero({}: Props) {
               onClick={(e) => {
                 let hero = document.getElementById("about");
                 e.preventDefault();
-                hero && hero.scrollIntoView();
+                hero && hero.scrollIntoView({ behavior: "smooth" });
               }}
               className="heroButton"
             >
@@ -41,7 +41,7 @@ export default function Hero({}: Props) {
               onClick={(e) => {
                 let hero = document.getElementById("experience");
                 e.preventDefault();
-                hero && hero.scrollIntoView();
+                hero && hero.scrollIntoView({ behavior: "smooth" });
               }}
               className="heroButton"
             >
@@ -52,7 +52,7 @@ export default function Hero({}: Props) {
               onClick={(e) => {
                 let hero = document.getElementById("skills");
                 e.preventDefault();
-                hero && hero.scrollIntoView();
+                hero && hero.scrollIntoView({ behavior: "smooth" });
               }}
               className="heroButton"
             >
@@ -63,7 +63,7 @@ export default function Hero({}: Props) {
               onClick={(e) => {
                 let hero = document.getElementById("projects");
                 e.preventDefault();
-                hero && hero.scrollIntoView();
+                hero && hero.scrollIntoView({ behavior: "smooth" });
               }}
               className="heroButton"
             >
