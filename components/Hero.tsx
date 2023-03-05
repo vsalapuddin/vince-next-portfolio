@@ -41,7 +41,7 @@ export default function Hero({}: Props) {
           </div>
         </div>
         <div>
-          <div className="relative w-10 h-14">
+          <div className="relative w-8 h-12">
             <Link href="#about">
               <div
                 className={`absolute inset-0 rounded-full bg-[#32CD32] ${
