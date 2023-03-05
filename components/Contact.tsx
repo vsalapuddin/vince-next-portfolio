@@ -21,9 +21,9 @@ function Contact({}) {
   };
   return (
     <motion.div
-      initial={{ x: 200, opacity: 0 }}
+      initial={{ y: 200, opacity: 0 }}
       transition={{ duration: 1 }}
-      whileInView={{ opacity: 1, x: 0 }}
+      whileInView={{ opacity: 1, y: 0 }}
       className="h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center"
     >
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
@@ -71,7 +71,7 @@ function Contact({}) {
             type="submit"
             className="bg-[#32CD32] py-5 px-10 rounded-md text-black font-bold text-lg"
           >
-            Submit
+            Say Hello
           </button>
         </form>
       </div>

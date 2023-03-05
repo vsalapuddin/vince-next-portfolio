@@ -81,9 +81,9 @@ function Skills({}: Props) {
   return (
     <header className="p-5 flex items-start justify-between ">
       <motion.div
-        initial={{ x: 200, opacity: 0 }}
+        initial={{ y: 200, opacity: 0 }}
         transition={{ duration: 1 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
         className="flex flex-col relative h-screen max-w-7xl  justify-evenly mx-auto items-center"
       >
         <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl text-center">
@@ -108,7 +108,7 @@ function Skills({}: Props) {
                 }}
                 className="w-16 h-16 md:w-24 md:h-24 flex items-center justify-center rounded-full"
               >
-                <div className="text-6xl p-2 md:p-1.5 w-12 h-12 md:w-20 md:h-20 bg-gray-900 rounded-full flex items-center justify-center">
+                <div className="p-2 md:p-1.5 w-12 h-12 md:w-20 md:h-20 bg-gray-900 rounded-full flex items-center justify-center">
                   <motion.img
                     initial={{ opacity: 0 }}
                     transition={{ duration: 1 }}
