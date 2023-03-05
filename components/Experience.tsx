@@ -21,12 +21,7 @@ export default function Experience({}) {
         <h3 className="uppercase tracking-[15px] md:tracking-[20px] text-gray-500 text-2xl text-center mb-8">
           Experience
         </h3>
-        <motion.div
-          initial={{ y: 200, opacity: 0 }}
-          transition={{ duration: 1 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          className="flex"
-        >
+        <div className="flex">
           <Swiper
             slidesPerView={1}
             loop={true}
@@ -57,7 +52,7 @@ export default function Experience({}) {
               <IFAS />
             </SwiperSlide>
           </Swiper>
-        </motion.div>
+        </div>
       </motion.div>
     </header>
   );

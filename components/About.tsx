@@ -9,9 +9,9 @@ export default function About({}: Props) {
       initial={{ y: 200, opacity: 0 }}
       transition={{ duration: 1 }}
       whileInView={{ opacity: 1, y: 0 }}
-      className="flex flex-col h-screen justify-evenly items-center"
+      className="flex flex-col h-screen justify-center items-center"
     >
-      <h3 className="uppercase tracking-[15px] md:tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="uppercase tracking-[15px] md:tracking-[20px] text-gray-500 text-2xl mb-8">
         About Me
       </h3>
       <div className="border p-4 rounded-lg">

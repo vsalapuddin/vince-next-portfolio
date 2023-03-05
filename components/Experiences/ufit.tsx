@@ -22,15 +22,7 @@ export default function ufit({}: Props) {
         <ul className="list-disc ml-5 text-sm">
           <li>
             Collaborating in an agile environment to design and develop new
-            features for{" "}
-            <a
-              href="https://one.uf.edu/"
-              target="_blank"
-              className="font-medium text-orange-500 underline dark:text-orange-500 hover:no-underline"
-            >
-              ONE.UF
-            </a>
-            .
+            features for the student portal.
           </li>
           <li>
             Designing and implementing a mobile application using React Native

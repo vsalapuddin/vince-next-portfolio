@@ -18,9 +18,9 @@ function Contact({}) {
       initial={{ y: 200, opacity: 0 }}
       transition={{ duration: 1 }}
       whileInView={{ opacity: 1, y: 0 }}
-      className="h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center"
+      className="h-screen flex flex-col justify-center mx-auto items-center"
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl mb-8">
         Contact
       </h3>
       <button

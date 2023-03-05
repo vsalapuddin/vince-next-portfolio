@@ -79,14 +79,14 @@ const skills = [
 function Skills({}: Props) {
   const x = useSpring(0);
   return (
-    <header className="p-5 flex items-start justify-between ">
+    <header className="p-5 flex items-start justify-between">
       <motion.div
         initial={{ y: 200, opacity: 0 }}
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1, y: 0 }}
-        className="flex flex-col relative h-screen max-w-7xl  justify-evenly mx-auto items-center"
+        className="flex flex-col relative h-screen max-w-7xl  justify-center mx-auto items-center"
       >
-        <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl text-center">
+        <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl text-center mb-8">
           Skills
         </h3>
         <div className="mt-8 grid grid-cols-4">
