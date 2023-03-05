@@ -1,8 +1,12 @@
 import React from "react";
+import { useState } from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 
 export default function Header({}) {
+  const [isHovered, setIsHovered] = useState(false);
+  const [isHovered2, setIsHovered2] = useState(false);
+  const [isHovered3, setIsHovered3] = useState(false);
   return (
     <header className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
       <motion.div
@@ -14,20 +18,29 @@ export default function Header({}) {
         <SocialIcon
           url="https://twitter.com/VinceSalapuddin"
           target="_blank"
-          fgColor="gray"
+          fgColor={isHovered ? "#32CD32" : "gray"}
           bgColor="transparent"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+          className="transition-colors duration-200 ease-in-out"
         ></SocialIcon>
         <SocialIcon
           url="https://github.com/vsalapuddin"
           target="_blank"
-          fgColor="gray"
+          fgColor={isHovered2 ? "#32CD32" : "gray"}
           bgColor="transparent"
+          onMouseEnter={() => setIsHovered2(true)}
+          onMouseLeave={() => setIsHovered2(false)}
+          className="transition-colors duration-200 ease-in-out"
         ></SocialIcon>
         <SocialIcon
           url="https://www.linkedin.com/in/vincesalapuddin/"
           target="_blank"
-          fgColor="gray"
+          fgColor={isHovered3 ? "#32CD32" : "gray"}
           bgColor="transparent"
+          onMouseEnter={() => setIsHovered3(true)}
+          onMouseLeave={() => setIsHovered3(false)}
+          className="transition-colors duration-200 ease-in-out"
         ></SocialIcon>
       </motion.div>
       <motion.div

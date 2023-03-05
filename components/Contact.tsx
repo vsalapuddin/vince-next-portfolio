@@ -24,7 +24,7 @@ function Contact({}) {
         Lets Talk!
       </h3>
       <button
-        className="border border-gray-500 text-gray-500 font-bold py-2 px-4 rounded-lg transition duration-300 ease-in-out hover:bg-gray-500 hover:text-white hover:border-gray-700"
+        className="border border-gray-500 text-gray-500 font-bold py-2 px-4 rounded-lg transition duration-300 ease-in-out hover:text-[#32CD32] hover:border-gray-700"
         onClick={EmailButton}
       >
         Email me
