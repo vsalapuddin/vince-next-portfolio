@@ -35,14 +35,14 @@ export default function Projects({}) {
     },
   ];
   return (
-    <motion.div
-      initial={{ x: 200, opacity: 0 }}
-      transition={{ duration: 1 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      className="h-screen"
-    >
-      <div className="p-0 md:p-4 flex flex-col justify-center w-full h-full text-white-500">
-        <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl text-center">
+    <header className="p-5 flex items-start justify-between ">
+      <motion.div
+        initial={{ x: 0, opacity: 0 }}
+        transition={{ duration: 2 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        className="flex flex-col relative h-screen md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center"
+      >
+        <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl text-center">
           Projects
         </h3>
         <div className="flex max-w-xs md:max-w-3xl gap-6 mx-auto items-center relative">
@@ -72,7 +72,7 @@ export default function Projects({}) {
             </Swiper>
           </div>
         </div>
-      </div>
-    </motion.div>
+      </motion.div>
+    </header>
   );
 }

@@ -79,17 +79,17 @@ const skills = [
 function Skills({}: Props) {
   const x = useSpring(0);
   return (
-    <motion.div
-      initial={{ x: 200, opacity: 0 }}
-      transition={{ duration: 1 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      className="h-screen"
-    >
-      <div className="max-w-screen-md mx-auto p-4 items-center flex flex-col justify-center h-full text-gray-500">
+    <header className="p-5 flex items-start justify-between ">
+      <motion.div
+        initial={{ x: 200, opacity: 0 }}
+        transition={{ duration: 1 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        className="flex flex-col relative h-screen max-w-7xl  justify-evenly mx-auto items-center"
+      >
         <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl text-center">
           Skills
         </h3>
-        <div className="mt-8 grid grid-cols-4 flex-wrap">
+        <div className="mt-8 grid grid-cols-4">
           {skills?.map((skill, i) => (
             <motion.div
               initial={{ opacity: 0 }}
@@ -122,8 +122,8 @@ function Skills({}: Props) {
             </motion.div>
           ))}
         </div>
-      </div>
-    </motion.div>
+      </motion.div>
+    </header>
   );
 }
 
