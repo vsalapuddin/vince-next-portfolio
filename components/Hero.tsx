@@ -1,10 +1,13 @@
 import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 type Props = {};
 
 export default function Hero({}: Props) {
+  const [isAnimating, setIsAnimating] = useState(true);
+
   return (
     <motion.div
       initial={{ y: -500, opacity: 0, scale: 1 }}
@@ -12,26 +15,48 @@ export default function Hero({}: Props) {
       transition={{ duration: 1.5 }}
       className="h-screen flex flex-col space-y-8 items-center justify-center"
     >
-      <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[5px] md:tracking-[15px] lg:tracking-[15px]">
-        Software Developer
-      </h2>
-      <h1 className="text-4xl lg:text-6xl font-semibold -px-10">
-        Vince Salapuddin
-      </h1>
-      {/* implement smooth scrolling */}
-      <div className="pt-5">
-        <Link href="#about">
-          <button className="heroButton">About</button>
-        </Link>
-        <Link href="#experience">
-          <button className="heroButton">Experience</button>
-        </Link>
-        <Link href="#skills">
-          <button className="heroButton">Skills</button>
-        </Link>
-        <Link href="#projects">
-          <button className="heroButton">Projects</button>
-        </Link>
+      <div className="flex flex-col h-screen items-center justify-between">
+        <div></div>
+        <div>
+          <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[5px] md:tracking-[15px] lg:tracking-[15px] text-center mb-4">
+            Software Developer
+          </h2>
+          <h1 className="text-4xl lg:text-6xl font-semibold text-center">
+            Vince Salapuddin
+          </h1>
+          {/* implement smooth scrolling */}
+          <div className="pt-5 text-center">
+            <Link href="#about">
+              <button className="heroButton">About</button>
+            </Link>
+            <Link href="#experience">
+              <button className="heroButton">Experience</button>
+            </Link>
+            <Link href="#skills">
+              <button className="heroButton">Skills</button>
+            </Link>
+            <Link href="#projects">
+              <button className="heroButton">Projects</button>
+            </Link>
+          </div>
+        </div>
+        <div>
+          <div className="relative w-10 h-14">
+            <Link href="#about">
+              <div
+                className={`absolute inset-0 rounded-full bg-[#32CD32] ${
+                  isAnimating ? "animate-bounce" : ""
+                }`}
+              ></div>
+              <div className="absolute inset-0 flex items-center">
+                <img
+                  src="arrow.png"
+                  className={`text-gray-500 text-2xl ${"animate-bounce"}`}
+                />
+              </div>
+            </Link>
+          </div>
+        </div>
       </div>
     </motion.div>
   );
