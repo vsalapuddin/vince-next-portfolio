@@ -25,11 +25,9 @@ export default function Experience({}) {
           <Swiper
             slidesPerView={1}
             loop={true}
-            autoplay={{
-              delay: 3000,
-            }}
             pagination={{
               clickable: true,
+              bulletClass: `swiper-pagination-bullet swiper-pagination-testClass`,
             }}
             modules={[Pagination, Autoplay]}
           >
