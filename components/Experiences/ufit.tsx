@@ -13,10 +13,10 @@ export default function ufit({}: Props) {
         <h4 className="text-3xl font-light">UF Information Technology</h4>
         <p className="font-bold mt-1">Software Developer</p>
         <div className="flex space-x-2 my-2">
-          <img className="h-8 w-8 rounded-full" src="/iconSkills/react.png" />
-          <img className="h-8 w-8 rounded-full" src="/iconSkills/node.png" />
-          <img className="h-8 w-8 rounded-full" src="/iconSkills/matui.png" />
-          <img className="h-8 w-8 rounded-full" src="/iconSkills/git.png" />
+          <img className="h-8 w-8" src="/iconSkills/react.png" />
+          <img className="h-8 w-8" src="/iconSkills/node.png" />
+          <img className="h-8 w-8" src="/iconSkills/matui.png" />
+          <img className="h-8 w-8" src="/iconSkills/git.png" />
         </div>
         <p className="uppercase text-gray-300">Jul 2022 - Present</p>
         <ul className="list-disc ml-5 text-sm">

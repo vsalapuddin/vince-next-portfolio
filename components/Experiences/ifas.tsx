@@ -13,8 +13,8 @@ export default function ifas({}: Props) {
         <h4 className="text-3xl font-light">IFAS Family Nutrition Program </h4>
         <p className="font-bold mt-1">Data Entry Specialist</p>
         <div className="flex space-x-2 my-2">
-          <img className="h-8 w-8 rounded-full" src="/iconSkills/c++.png" />
-          <img className="h-8 w-8 rounded-full" src="/iconSkills/excel.png" />
+          <img className="h-8 w-8" src="/iconSkills/c++.png" />
+          <img className="h-8 w-8" src="/iconSkills/excel.png" />
         </div>
         <p className="uppercase text-gray-300">May 2019 - May 2020</p>
         <ul className="list-disc ml-5 text-sm">

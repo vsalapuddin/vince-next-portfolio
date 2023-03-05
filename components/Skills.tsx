@@ -45,11 +45,6 @@ const skills = [
     title: "Material Ui",
   },
   {
-    src: "postman",
-    count: 70,
-    title: "Postman",
-  },
-  {
     src: "tailwind",
     count: 65,
     title: "Tailwind CSS",
@@ -108,7 +103,7 @@ function Skills({}: Props) {
                 }}
                 className="w-16 h-16 md:w-24 md:h-24 flex items-center justify-center rounded-full"
               >
-                <div className="p-2 md:p-1.5 w-12 h-12 md:w-20 md:h-20 bg-gray-900 rounded-full flex items-center justify-center">
+                <div className="p-3 w-12 h-12 md:w-20 md:h-20 bg-gray-900 rounded-full flex items-center justify-center">
                   <motion.img
                     initial={{ opacity: 0 }}
                     transition={{ duration: 1 }}
