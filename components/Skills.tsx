@@ -115,6 +115,9 @@ function Skills({}: Props) {
                     whileInView={{ opacity: 1 }}
                     src={`/iconSkills/${skill.src}.png`}
                     alt="skills"
+                    style={{
+                      color: "white",
+                    }}
                   />
                 </div>
               </motion.div>
