@@ -15,7 +15,7 @@ export default function About({}: Props) {
         About Me
       </h3>
       <div className="border p-4 rounded-lg">
-        <div className="grid grid-cols-3 gap-4 max-w-xl">
+        <div className="grid grid-rows-3 gap-4 max-w-xl">
           <div className="border p-4 rounded-lg">
             <h2 className="text-lg font-bold mb-2">Software Development</h2>
             <p className="text-gray-500">
