@@ -78,14 +78,14 @@ function Skills({}: Props) {
         <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl text-center mb-8">
           Skills
         </h3>
-        <div className="mt-8 grid grid-cols-4">
+        <div className="mt-8 grid grid-cols-4 items-center text-center justify-items-center justify-content-center">
           {skills?.map((skill, i) => (
             <motion.div
               initial={{ opacity: 0 }}
               transition={{ duration: 1 }}
               whileInView={{ opacity: 1, x: 0 }}
               key={i}
-              className="text-center mx-4 my-1"
+              className="text-center mx-4 my-1 items-center"
             >
               <motion.div
                 initial={{
@@ -95,9 +95,9 @@ function Skills({}: Props) {
                 whileInView={{
                   background: `conic-gradient(rgb(182, 158, 255) ${skill.count}%, transparent ${skill.count}%)`,
                 }}
-                className="w-16 h-16 md:w-24 md:h-24 flex items-center justify-center rounded-full"
+                className="w-14 h-14 md:w-24 md:h-24 flex items-center justify-center rounded-full"
               >
-                <div className="p-3 w-12 h-12 md:w-20 md:h-20 bg-gray-900 rounded-full flex items-center justify-center">
+                <div className="p-2 w-12 h-12 md:w-20 md:h-20 bg-gray-900 rounded-full flex items-center justify-center">
                   <motion.img
                     initial={{ opacity: 0 }}
                     transition={{ duration: 1 }}
@@ -110,7 +110,9 @@ function Skills({}: Props) {
                   />
                 </div>
               </motion.div>
-              <p className="mt-3 text-sm md:text-lg">{skill.title}</p>
+              <p className="mt-3 text-sm md:text-lg text-center">
+                {skill.title}
+              </p>
             </motion.div>
           ))}
         </div>
