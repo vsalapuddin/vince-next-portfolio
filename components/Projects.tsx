@@ -11,26 +11,31 @@ export default function Projects({}) {
   const projects = [
     {
       name: "Web3 Kahoot",
-      desc: `Developed an application implementing the concept of Kahoot style quizzes using Web3 technologies.`,
+      desc: `An application implementing the concept of Kahoot style quizzes using Web3 technologies.`,
+      icon: "/web3.png",
     },
     {
       name: "Crypto Site",
-      desc: "Developed a website that allows users to compare bitcoin price to other sets of data and analyze the relationship.",
+      desc: "A website that allows users to compare bitcoin price to other sets of data and analyze the relationship.",
       github_link: "https://github.com/vsalapuddin/CryptoSite",
+      icon: "/crypto.png",
     },
     {
       name: "Minesweeper",
-      desc: "C++ with Simple and Fast Multimedia Library (SFML) to create a standard minesweeper game. ",
+      desc: "A standard minesweeper game created with C++ and Simple and Fast Multimedia Library (SFML). ",
+      icon: "/mine.png",
     },
     {
       name: "File I/O Quality Checker ",
-      desc: "Developed a file I/O program using C++ to quality check excel files for errors (created to increase job efficiency for myself and other workers at my place of work).",
+      desc: "A C++ file I/O program created to quality check excel files for errors.",
       github_link: "https://github.com/vsalapuddin/Quality-Checker",
+      icon: "/file.png",
     },
     {
       name: "Trader Gator",
-      desc: "Informational website teaching users how to trade options in the stock market. (HTML and CSS)",
+      desc: "Informational website teaching users how to trade options in the stock market.",
       github_link: "https://github.com/vsalapuddin/vsalapuddin.github.io",
+      icon: "/trader.png",
     },
   ];
   return (
@@ -44,7 +49,7 @@ export default function Projects({}) {
         <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl text-center mb-8">
           Personal Projects
         </h3>
-        <div className="flex max-w-xs md:max-w-3xl gap-6 mx-auto items-center relative bg-[#292929]">
+        <div className="flex max-w-xs md:max-w-3xl gap-6 mx-auto items-center relative border border-[#b69eff]">
           <div className="max-w-xs md:max-w-3xl rounded-lg">
             <Swiper
               slidesPerView={1}
@@ -58,10 +63,14 @@ export default function Projects({}) {
               {projects.map((project_info, i) => (
                 <SwiperSlide
                   key={i}
-                  className="mb-10 flex-row flex items-center"
+                  className="mb-10 flex-col md:flex-row flex items-center"
                 >
                   <div>
-                    <img className="h-16 w-32 m-2" src="/phone.png" />
+                    <img
+                      className="h-36 w-48 m-2"
+                      src={`${project_info.icon}`}
+                      style={{ width: "128px", height: "128px" }}
+                    />
                   </div>
                   <div className="h-48 p-4 rounded-xl position-absolute ">
                     <h3 className="text-xl my-0 md:my-4">
