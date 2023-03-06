@@ -1,9 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-type Props = {};
-
-export default function About({}: Props) {
+export default function About() {
   return (
     <header className="p-5 flex items-center justify-center">
       <motion.div

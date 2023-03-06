@@ -1,14 +1,6 @@
 import React from "react";
-import { EnvelopeIcon } from "@heroicons/react/24/solid";
-import { useForm, SubmitHandler } from "react-hook-form";
 import { motion } from "framer-motion";
 
-type Inputs = {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
-};
 const EmailButton = () => {
   window.open("mailto:vsalapuddin@ufl.edu", "_blank");
 };

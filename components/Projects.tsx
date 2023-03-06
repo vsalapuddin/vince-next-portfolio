@@ -65,6 +65,7 @@ export default function Projects({}) {
                       {project_info.name}
                     </h3>
                     <p className="text-m text-gray-400">{project_info.desc}</p>
+                    <a></a>
                   </div>
                 </SwiperSlide>
               ))}

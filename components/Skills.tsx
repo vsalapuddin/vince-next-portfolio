@@ -1,7 +1,5 @@
-import React, { useState } from "react";
-import { motion, useMotionValue, transform, useSpring } from "framer-motion";
-
-type Props = {};
+import React from "react";
+import { motion } from "framer-motion";
 
 const skills = [
   {
@@ -66,7 +64,7 @@ const skills = [
   },
 ];
 
-function Skills({}: Props) {
+function Skills() {
   return (
     <header className="p-5 flex items-start justify-between">
       <motion.div

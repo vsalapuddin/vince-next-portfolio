@@ -1,8 +1,6 @@
 import React from "react";
 
-type Props = {};
-
-export default function ufit({}: Props) {
+export default function ufit() {
   return (
     <article className="flex flex-col rounded-lg items-center space-y-7 snap-center p-10 overflow-hidden">
       <img
