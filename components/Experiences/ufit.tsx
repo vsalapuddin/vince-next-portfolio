@@ -16,8 +16,8 @@ export default function ufit() {
           <img className="h-8 w-8" src="/iconSkills/matui.png" />
           <img className="h-8 w-8" src="/iconSkills/git.png" />
         </div>
-        <p className="uppercase">Jul 2022 - Present</p>
-        <ul className="text-m text-gray-400">
+        <p className="uppercase text-gray-300">Jul 2022 - Present</p>
+        <ul className="text-m text-gray-200">
           <li>
             Collaborating in an agile environment to design and develop new
             features for the student portal.

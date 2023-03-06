@@ -46,7 +46,7 @@ export default function Projects({}) {
         whileInView={{ opacity: 1, y: 0 }}
         className="flex flex-col relative h-screen justify-center mx-auto items-center"
       >
-        <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl text-center mb-8">
+        <h3 className="uppercase tracking-[20px] text-gray-400 text-2xl text-center mb-8">
           Personal Projects
         </h3>
         <div className="flex max-w-xs md:max-w-3xl gap-6 mx-auto items-center relative border bg-[#253237] border-[#b69eff] rounded-lg p-2">
@@ -72,11 +72,11 @@ export default function Projects({}) {
                       style={{ width: "128px", height: "128px" }}
                     />
                   </div>
-                  <div className="h-48 p-4 rounded-xl position-absolute ">
+                  <div className="h-48 p-4 rounded-xl position-absolute">
                     <h3 className="text-xl my-0 md:my-4">
                       {project_info.name}
                     </h3>
-                    <p className="text-m text-gray-400">{project_info.desc}</p>
+                    <p className="text-m text-gray-200">{project_info.desc}</p>
                     {project_info.github_link ? (
                       <SocialIcon
                         url={project_info.github_link}

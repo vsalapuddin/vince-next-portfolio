@@ -16,7 +16,7 @@ export default function infotech() {
           <img className="h-8 w-8" src="/iconSkills/git.png" />
         </div>
         <p className="uppercase text-gray-300">May 2021 - Sep 2021</p>
-        <ul className="text-m text-gray-400">
+        <ul className="text-m text-gray-200">
           <li>
             Developed a new time-entry application for employees for faster,
             more accurate timesheets.

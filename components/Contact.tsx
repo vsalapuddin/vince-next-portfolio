@@ -10,12 +10,12 @@ function Contact({}) {
       initial={{ y: 200, opacity: 0 }}
       transition={{ duration: 1 }}
       whileInView={{ opacity: 1, y: 0 }}
-      className="h-screen flex flex-col justify-center mx-auto items-center text-center max-w-sm "
+      className="h-screen flex flex-col justify-center mx-auto items-center text-center max-w-sm"
     >
-      <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl mb-8">
+      <h3 className="uppercase tracking-[20px] text-gray-400 text-2xl mb-8">
         Get In Touch
       </h3>
-      <p className="text-m text-gray-400 mb-8">
+      <p className="text-m text-gray-200 mb-8">
         My inbox is always open. Whether you have a question or just want to
         create your next idea together!
       </p>

@@ -10,7 +10,7 @@ export default function About() {
         whileInView={{ opacity: 1, y: 0 }}
         className="flex flex-col h-screen justify-center items-center"
       >
-        <h3 className="uppercase tracking-[15px] md:tracking-[20px] text-gray-500 text-2xl mb-8">
+        <h3 className="uppercase tracking-[15px] md:tracking-[20px] text-gray-400 text-2xl mb-8">
           About Me
         </h3>
         <div className="border bg-[#253237] border-[#b69eff] p-2 md:p-4 rounded-lg">
@@ -22,7 +22,7 @@ export default function About() {
                   <h2 className="text-lg font-bold mb-2">
                     Software Development
                   </h2>{" "}
-                  <p className="text-gray-500">
+                  <p className="text-gray-200">
                     Experienced in both functional and OOP: C++, JavaScript,
                     TypeScript.
                   </p>
@@ -36,7 +36,7 @@ export default function About() {
                   <h2 className="text-lg font-bold mb-2">
                     Frontend Dev React, NextJS
                   </h2>
-                  <p className="text-gray-500">
+                  <p className="text-gray-200">
                     Passionate about UI/UX. Experience in HTML, CSS, JS, React
                     and NextJS frameworks.
                   </p>
@@ -50,7 +50,7 @@ export default function About() {
                   <h2 className="text-lg font-bold mb-2">
                     React Native Dev Android, iOS
                   </h2>
-                  <p className="text-gray-500">
+                  <p className="text-gray-200">
                     Skilled in developing hybrid mobile apps and cross-platform
                     solutions using the React Native framework.
                   </p>

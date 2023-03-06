@@ -18,7 +18,7 @@ export default function Experience({}) {
         whileInView={{ opacity: 1, y: 0 }}
         className="h-screen flex flex-col justify-center items-center"
       >
-        <h3 className="uppercase tracking-[15px] md:tracking-[20px] text-gray-500 text-2xl text-center mb-8">
+        <h3 className="uppercase tracking-[15px] md:tracking-[20px] text-gray-400 text-2xl text-center mb-8">
           Experience
         </h3>
         <div className="flex border bg-[#253237] border-[#b69eff] rounded-lg max-w-xs md:max-w-xl">

@@ -51,7 +51,7 @@ export default function Header({}) {
       >
         <button
           className="px-6 py-3 border-[#242424] rounded-full uppercase tracking-widest
-     text-gray-500 transition-all hover:text-[#b69eff]"
+     text-gray-400 transition-all hover:text-[#b69eff]"
         >
           <a href="/VinceSalapuddinResume.pdf" download>
             RESUME

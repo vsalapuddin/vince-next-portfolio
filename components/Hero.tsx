@@ -15,7 +15,7 @@ export default function Hero() {
       <div className="flex flex-col h-screen items-center justify-between">
         <div></div>
         <div>
-          <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[5px] md:tracking-[15px] lg:tracking-[15px] text-center mb-4">
+          <h2 className="text-sm uppercase text-gray-400 pb-2 tracking-[5px] md:tracking-[15px] lg:tracking-[15px] text-center mb-4">
             Software Developer
           </h2>
           <h1 className="text-4xl lg:text-6xl font-semibold text-center">
@@ -86,7 +86,7 @@ export default function Hero() {
               <div className="absolute inset-0 flex items-center">
                 <img
                   src="arrow.png"
-                  className={`text-gray-500 text-2xl ${"animate-bounce"}`}
+                  className={`text-gray-400 text-2xl ${"animate-bounce"}`}
                 />
               </div>
             </a>
