@@ -17,7 +17,11 @@ export default function About() {
           <div className="grid grid-rows md:grid-rows-3 md:gap-4 md:max-w-xl ">
             <div className="md:border md:p-4 border-[#b69eff] rounded-lg">
               <div className="flex flex-row">
-                <img className="h-16 w-16 m-2" src="/monitor.png" />
+                <img
+                  className="h-16 w-16 m-2"
+                  src="/monitor.png"
+                  alt={"monitor"}
+                />
                 <div>
                   <h2 className="text-lg font-bold mb-2">
                     Software Development
@@ -31,7 +35,11 @@ export default function About() {
             </div>
             <div className="md:border md:p-4 border-[#b69eff] rounded-lg">
               <div className="flex flex-row">
-                <img className="h-16 w-16 m-2" src="/iconSkills/react.png" />
+                <img
+                  className="h-16 w-16 m-2"
+                  src="/iconSkills/react.png"
+                  alt={"react"}
+                />
                 <div>
                   <h2 className="text-lg font-bold mb-2">
                     Frontend Dev React, NextJS
@@ -45,7 +53,7 @@ export default function About() {
             </div>
             <div className="md:border md:p-4 border-[#b69eff] rounded-lg">
               <div className="flex flex-row">
-                <img className="h-16 w-16 m-2" src="/phone.png" />
+                <img className="h-16 w-16 m-2" src="/phone.png" alt={"phone"} />
                 <div>
                   <h2 className="text-lg font-bold mb-2">
                     React Native Dev Android, iOS

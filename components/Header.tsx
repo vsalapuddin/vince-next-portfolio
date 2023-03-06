@@ -49,14 +49,14 @@ export default function Header({}) {
         transition={{ duration: 1.5 }}
         className="flex flex-row"
       >
-        <button
+        <a
+          href="/VinceSalapuddinResume.pdf"
           className="px-6 py-3 border-[#242424] rounded-full uppercase tracking-widest
      text-gray-400 transition-all hover:text-[#b69eff]"
+          download
         >
-          <a href="/VinceSalapuddinResume.pdf" download>
-            RESUME
-          </a>
-        </button>
+          RESUME
+        </a>
       </motion.div>
     </header>
   );

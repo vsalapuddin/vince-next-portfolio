@@ -77,6 +77,7 @@ export default function Hero() {
                 e.preventDefault();
                 hero && hero.scrollIntoView({ behavior: "smooth" });
               }}
+              aria-label={"Continue to about screen"}
             >
               <div
                 className={`absolute inset-0 rounded-full bg-[#b69eff] ${
@@ -87,6 +88,7 @@ export default function Hero() {
                 <img
                   src="arrow.png"
                   className={`text-gray-400 text-2xl ${"animate-bounce"}`}
+                  alt={"down arrow"}
                 />
               </div>
             </a>

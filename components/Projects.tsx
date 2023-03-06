@@ -70,6 +70,7 @@ export default function Projects({}) {
                       className="h-36 w-48 m-2"
                       src={`${project_info.icon}`}
                       style={{ width: "128px", height: "128px" }}
+                      alt={"project image"}
                     />
                   </div>
                   <div className="h-48 p-4 rounded-xl position-absolute">
