@@ -13,7 +13,7 @@ export default function About() {
         <h3 className="uppercase tracking-[15px] md:tracking-[20px] text-gray-500 text-2xl mb-8">
           About Me
         </h3>
-        <div className="border border-[#b69eff] p-2 md:p-4 rounded-lg">
+        <div className="border bg-[#253237] border-[#b69eff] p-2 md:p-4 rounded-lg">
           <div className="grid grid-rows md:grid-rows-3 md:gap-4 md:max-w-xl ">
             <div className="md:border md:p-4 border-[#b69eff] rounded-lg">
               <div className="flex flex-row">
