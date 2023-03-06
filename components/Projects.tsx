@@ -42,7 +42,7 @@ export default function Projects({}) {
           Personal Projects
         </h3>
         <div className="flex max-w-xs md:max-w-3xl gap-6 mx-auto items-center relative bg-[#292929]">
-          <div className="max-w-xl rounded-lg">
+          <div className="max-w-xs md:max-w-3xl rounded-lg">
             <Swiper
               slidesPerView={1}
               spaceBetween={0}
