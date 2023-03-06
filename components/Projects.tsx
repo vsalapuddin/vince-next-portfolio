@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper";
+import { SocialIcon } from "react-social-icons";
 import "swiper/css";
 import "swiper/css/pagination";
 
 export default function Projects({}) {
+  const [isHovered, setIsHovered] = useState(false);
   const projects = [
     {
       name: "Web3 Kahoot",
@@ -14,6 +16,7 @@ export default function Projects({}) {
     {
       name: "Crypto Site",
       desc: "Developed a website that allows users to compare bitcoin price to other sets of data and analyze the relationship.",
+      github_link: "https://github.com/vsalapuddin/CryptoSite",
     },
     {
       name: "Minesweeper",
@@ -65,7 +68,20 @@ export default function Projects({}) {
                       {project_info.name}
                     </h3>
                     <p className="text-m text-gray-400">{project_info.desc}</p>
-                    <a></a>
+                    {project_info.github_link ? (
+                      <SocialIcon
+                        url={project_info.github_link}
+                        target="_blank"
+                        fgColor={isHovered ? "#b69eff" : "gray"}
+                        bgColor="transparent"
+                        onMouseEnter={() => setIsHovered(true)}
+                        onMouseLeave={() => setIsHovered(false)}
+                        className="transition-colors duration-200 ease-in-out"
+                        style={{ transform: "translateX(-10px)" }}
+                      />
+                    ) : (
+                      <></>
+                    )}
                   </div>
                 </SwiperSlide>
               ))}
