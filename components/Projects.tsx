@@ -11,29 +11,29 @@ export default function Projects({}) {
   const projects = [
     {
       name: "Web3 Kahoot",
-      desc: `An application implementing the concept of Kahoot style quizzes using Web3 technologies.`,
+      desc: `A software solution developed using Rust and React that leverages the power of Web3 technologies on the Solana blockchain. It is designed to provide an exceptional user experience through the implementation of Kahoot-style quizzes, offering an engaging and interactive platform for users. Notably, users can earn cryptocurrency as they participate in quizzes.`,
       icon: "/web3.png",
     },
     {
       name: "Crypto Site",
-      desc: "A website that allows users to compare bitcoin price to other sets of data and analyze the relationship.",
+      desc: "A web-based application that facilitates data analysis of Bitcoin price trends against other data sets. It enables users to make comparisons between Bitcoin prices and other metrics, thereby providing valuable insights into the cryptocurrency market. The platform utilizes advanced data analysis techniques to visualize the relationship between Bitcoin price trends and other data sets, providing an intuitive and informative user experience.",
       github_link: "https://github.com/vsalapuddin/CryptoSite",
       icon: "/crypto.png",
     },
     {
       name: "Minesweeper",
-      desc: "A standard minesweeper game created with C++ and Simple and Fast Multimedia Library (SFML). ",
+      desc: "This project is a Minesweeper game created using C++ programming language and the Simple and Fast Multimedia Library (SFML). The use of C++ and SFML ensures excellent performance and smooth gameplay, enhancing the overall user experience. ",
       icon: "/mine.png",
     },
     {
       name: "File I/O Quality Checker ",
-      desc: "A C++ file I/O program created to quality check excel files for errors.",
+      desc: "This project is a C++ program designed to perform automated quality checks on Excel files, leveraging file input/output functionality. It offers a robust solution for identifying and rectifying errors in Excel files, thereby reducing the risk of data loss and inaccuracies. The program employs advanced error detection algorithms to identify errors efficiently and accurately, minimizing the need for manual intervention.",
       github_link: "https://github.com/vsalapuddin/Quality-Checker",
       icon: "/file.png",
     },
     {
       name: "Trader Gator",
-      desc: "Informational website teaching users how to trade options in the stock market.",
+      desc: "An educational website that provides users with comprehensive guidance on trading options in the stock market. The website employs a user-friendly interface and intuitive navigation, allowing users to access relevant information quickly and easily. The content is presented in a clear and concise manner, leveraging modern instructional design principles to facilitate effective learning. The website offers a valuable resource for both novice and experienced options traders seeking to enhance their trading strategies and improve their overall performance in the market.",
       github_link: "https://github.com/vsalapuddin/vsalapuddin.github.io",
       icon: "/trader.png",
     },
