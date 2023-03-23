@@ -1,72 +1,35 @@
 import React from "react";
 import { motion } from "framer-motion";
-
-export default function About() {
+type Props = {};
+export default function About({}: Props) {
   return (
-    <header className="p-5 flex items-center justify-center">
+    <header className="p-5 flex items-start justify-between ">
       <motion.div
         initial={{ y: 200, opacity: 0 }}
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1, y: 0 }}
-        className="flex flex-col h-screen justify-center items-center"
+        className="flex flex-col relative h-screen md:text-left md:flex-row max-w-7xl px-0 md:px-10 justify-evenly mx-auto items-center"
       >
-        <h3 className="uppercase tracking-[15px] md:tracking-[20px] text-gray-400 text-2xl mb-8">
+        <h3 className="absolute top-24 uppercase tracking-[15px] md:tracking-[15px] text-gray-500 text-xl md:text-2xl">
           About Me
         </h3>
-        <div className="border bg-[#253237] border-[#b69eff] p-2 md:p-4 rounded-lg">
-          <div className="grid grid-rows md:grid-rows-3 md:gap-4 md:max-w-xl ">
-            <div className="md:border md:p-4 border-[#b69eff] rounded-lg">
-              <div className="flex flex-row">
-                <img
-                  className="h-16 w-16 m-2"
-                  src="/monitor.png"
-                  alt={"monitor"}
-                />
-                <div>
-                  <h2 className="text-lg font-bold mb-2">
-                    Software Development
-                  </h2>{" "}
-                  <p className="text-gray-200">
-                    Experienced in both functional and OOP: C++, JavaScript,
-                    TypeScript.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="md:border md:p-4 border-[#b69eff] rounded-lg">
-              <div className="flex flex-row">
-                <img
-                  className="h-16 w-16 m-2"
-                  src="/iconSkills/react.png"
-                  alt={"react"}
-                />
-                <div>
-                  <h2 className="text-lg font-bold mb-2">
-                    Frontend Dev React, NextJS
-                  </h2>
-                  <p className="text-gray-200">
-                    Passionate about UI/UX. Experience in HTML, CSS, JS, React
-                    and NextJS frameworks.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="md:border md:p-4 border-[#b69eff] rounded-lg">
-              <div className="flex flex-row">
-                <img className="h-16 w-16 m-2" src="/phone.png" alt={"phone"} />
-                <div>
-                  <h2 className="text-lg font-bold mb-2">
-                    React Native Dev Android, iOS
-                  </h2>
-                  <p className="text-gray-200">
-                    Skilled in developing hybrid mobile apps and cross-platform
-                    solutions using the React Native framework.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <motion.img
+          initial={{ y: 200, opacity: 0 }}
+          transition={{ duration: 1 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          src="/about.jpeg"
+          className=" mt-20 -mb-10 md:mt-0 md:mb-0 flex-shrink-0 w-48 h-48 rounded-full object-cover  md:w-64 md:h-64 xl:w-[400px] xl:h-[400px]"
+        />
+        <motion.div
+          initial={{ y: 200, opacity: 0 }}
+          transition={{ duration: 1 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          className="space-y-10 px-0 md:px-10 w-full"
+        >
+          <p className="text-md md:text-lg font-sans md:leading-loose ">
+          Hello! My name is Vince Salapuddin and I am a highly motivated, recent computer science graduate from the University of Florida. I am currently working as a software developer for the University of Florida, working in an agile environment, creating features for the student portal and developing a mobile application. With my passion for development, capacity to learn quickly, and ability to excel in dynamic environments, I am confident that I would be a valuable member to any team and am excited for new opportunities to improve my craft.
+          </p>
+        </motion.div>
       </motion.div>
     </header>
   );

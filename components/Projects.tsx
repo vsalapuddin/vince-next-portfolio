@@ -16,7 +16,7 @@ export default function Projects({}) {
     },
     {
       name: "Crypto Site",
-      desc: "A web-based application that facilitates data analysis of Bitcoin price trends against other data sets. It enables users to make comparisons between Bitcoin prices and other metrics, thereby providing valuable insights into the cryptocurrency market. The platform utilizes advanced data analysis techniques to visualize the relationship between Bitcoin price trends and other data sets, providing an intuitive and informative user experience.",
+      desc: "A web-based application that facilitates data analysis of Bitcoin price trends against other data sets. It enables users to make comparisons between Bitcoin prices and other metrics, thereby providing valuable insights into the cryptocurrency market. The platform allows users to visualize the relationship between Bitcoin price trends and other data sets, providing an informative user experience.",
       github_link: "https://github.com/vsalapuddin/CryptoSite",
       icon: "/crypto.png",
     },
@@ -27,13 +27,13 @@ export default function Projects({}) {
     },
     {
       name: "File I/O Quality Checker ",
-      desc: "This project is a C++ program designed to perform automated quality checks on Excel files, leveraging file input/output functionality. It offers a robust solution for identifying and rectifying errors in Excel files, thereby reducing the risk of data loss and inaccuracies. The program employs advanced error detection algorithms to identify errors efficiently and accurately, minimizing the need for manual intervention.",
+      desc: "C++ program designed to perform automated quality checks on Excel files, leveraging file input/output functionality. It offers a robust solution for identifying and rectifying errors in Excel files, thereby reducing the risk of data loss and inaccuracies. The program employs advanced error detection algorithms to identify errors efficiently and accurately, minimizing the need for manual intervention.",
       github_link: "https://github.com/vsalapuddin/Quality-Checker",
       icon: "/file.png",
     },
     {
       name: "Trader Gator",
-      desc: "An educational website that provides users with comprehensive guidance on trading options in the stock market. The website employs a user-friendly interface and intuitive navigation, allowing users to access relevant information quickly and easily. The content is presented in a clear and concise manner, leveraging modern instructional design principles to facilitate effective learning. The website offers a valuable resource for both novice and experienced options traders seeking to enhance their trading strategies and improve their overall performance in the market.",
+      desc: "An educational website that provides users with comprehensive guidance on trading options in the stock market. The website employs a user-friendly interface and intuitive navigation, allowing users to access relevant information quickly and easily. The content is presented in a clear and concise manner, leveraging modern instructional design principles to facilitate effective learning.",
       github_link: "https://github.com/vsalapuddin/vsalapuddin.github.io",
       icon: "/trader.png",
     },
@@ -65,19 +65,18 @@ export default function Projects({}) {
                   key={i}
                   className="mb-10 flex-col md:flex-row flex items-center"
                 >
-                  <div>
-                    <img
+                  <img
                       className="h-36 w-48 m-2"
                       src={`${project_info.icon}`}
-                      style={{ width: "128px", height: "128px" }}
+                      style={{ width: "96px", height: "96px" }}
                       alt={"project image"}
                     />
-                  </div>
-                  <div className="h-48 p-4 rounded-xl position-absolute">
+                  
+                  <div className="h-64 p-4 rounded-xl position-absolute">
                     <h3 className="text-xl my-0 md:my-4">
                       {project_info.name}
                     </h3>
-                    <p className="text-m text-gray-200">{project_info.desc}</p>
+                    <p className="text-sm md:text-lg  text-gray-200">{project_info.desc}</p>
                     {project_info.github_link ? (
                       <SocialIcon
                         url={project_info.github_link}
