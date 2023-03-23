@@ -5,7 +5,7 @@ export default function ufit() {
     <article className="flex flex-col rounded-lg items-center space-y-7 snap-center p-10 overflow-hidden">
       <img
         className="w-24 h-24 rounded-full xl:w-[150px] xl:h-[150px] object-cover object-center"
-        src="/Experience/ufit.png"
+        src="/Experience/ufit1.png"
         alt="UFIT"
       />
       <div className="px-0 md:px-10">
