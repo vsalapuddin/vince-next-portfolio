@@ -67,7 +67,7 @@ export default function Projects({}) {
                   className="mb-10 flex-col md:flex-row flex items-center"
                 >
                   <Image
-                      className="h-36 w-48 m-2"
+                      className="h-18 w-24 m-2 object-cover object-center"
                       src={`${project_info.icon}`}
                       width={"999"}
                       height={"999"}
