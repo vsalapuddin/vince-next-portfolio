@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Hero() {
   const [isAnimating, setIsAnimating] = useState(true);
@@ -22,7 +23,7 @@ export default function Hero() {
             Vince Salapuddin
           </h1>
           <div className="pt-5 text-center">
-            <a
+            <Link
               href="/"
               onClick={(e) => {
                 let hero = document.getElementById("about");
@@ -32,8 +33,8 @@ export default function Hero() {
               className="heroButton"
             >
               About
-            </a>
-            <a
+            </Link>
+            <Link
               href="/"
               onClick={(e) => {
                 let hero = document.getElementById("experience");
@@ -43,8 +44,8 @@ export default function Hero() {
               className="heroButton"
             >
               Experience
-            </a>
-            <a
+            </Link>
+            <Link
               href="/"
               onClick={(e) => {
                 let hero = document.getElementById("skills");
@@ -54,8 +55,8 @@ export default function Hero() {
               className="heroButton"
             >
               Skills
-            </a>
-            <a
+            </Link>
+            <Link
               href="/"
               onClick={(e) => {
                 let hero = document.getElementById("projects");
@@ -65,12 +66,12 @@ export default function Hero() {
               className="heroButton"
             >
               Projects
-            </a>
+            </Link>
           </div>
         </div>
         <div>
           <div className="relative w-8 h-12">
-            <a
+            <Link
               href="/"
               onClick={(e) => {
                 let hero = document.getElementById("about");
@@ -91,7 +92,7 @@ export default function Hero() {
                   alt={"down arrow"}
                 />
               </div>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
