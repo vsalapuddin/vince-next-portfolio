@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper";
 import { SocialIcon } from "react-social-icons";
+import Image from "next/image";
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -65,10 +66,12 @@ export default function Projects({}) {
                   key={i}
                   className="mb-10 flex-col md:flex-row flex items-center"
                 >
-                  <img
+                  <Image
                       className="h-36 w-48 m-2"
                       src={`${project_info.icon}`}
-                      style={{ width: "96px", height: "96px" }}
+                      
+                      width={"999"}
+height={"999"}
                       alt={"project image"}
                     />
                   

@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Hero() {
   const [isAnimating, setIsAnimating] = useState(true);
@@ -86,10 +87,12 @@ export default function Hero() {
                 }`}
               ></div>
               <div className="absolute inset-0 flex items-center">
-                <img
-                  src="arrow.png"
+                <Image
+                  src="/arrow.png"
                   className={`text-gray-400 text-2xl ${"animate-bounce"}`}
                   alt={"down arrow"}
+                  width={"999"}
+height={"999"}
                 />
               </div>
             </Link>

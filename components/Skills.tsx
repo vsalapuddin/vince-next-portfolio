@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-
+import Image from "next/image";
 const skills = [
   {
     src: "react",
@@ -96,10 +96,9 @@ function Skills() {
                 className="w-14 h-14 md:w-24 md:h-24 flex items-center justify-center rounded-full"
               >
                 <div className="p-2 w-12 h-12 md:w-20 md:h-20 bg-gray-900 rounded-full flex items-center justify-center">
-                  <motion.img
-                    initial={{ opacity: 0 }}
-                    transition={{ duration: 1 }}
-                    whileInView={{ opacity: 1 }}
+                  <Image
+                    width={"999"}
+height={"999"}
                     src={`/iconSkills/${skill.src}.png`}
                     alt="skills"
                     style={{

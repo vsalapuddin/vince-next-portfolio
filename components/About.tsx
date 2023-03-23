@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 type Props = {};
 export default function About({}: Props) {
   return (
@@ -13,12 +14,12 @@ export default function About({}: Props) {
         <h3 className="absolute top-24 uppercase tracking-[15px] md:tracking-[15px] text-gray-500 text-xl md:text-2xl">
           About Me
         </h3>
-        <motion.img
-          initial={{ y: 200, opacity: 0 }}
-          transition={{ duration: 1 }}
-          whileInView={{ opacity: 1, y: 0 }}
+        <Image
           src="/about.jpeg"
           className=" mt-20 -mb-10 md:mt-0 md:mb-0 flex-shrink-0 w-48 h-48 rounded-full object-cover  md:w-64 md:h-64 xl:w-[400px] xl:h-[400px]"
+          width={"999"}
+          height={"999"}
+          alt="Vince Salapuddin"
         />
         <motion.div
           initial={{ y: 200, opacity: 0 }}
