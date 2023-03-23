@@ -7,7 +7,7 @@ export default function ufit() {
         width={"999"}
 height={"999"}
         className="w-24 h-24 rounded-full xl:w-[150px] xl:h-[150px] object-cover object-center"
-        src="/Experience/ufit1.png"
+        src="/Experience/uf.png"
         alt="UFIT"
       />
       <div className="px-0 md:px-10">
