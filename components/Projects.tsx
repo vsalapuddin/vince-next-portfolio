@@ -50,7 +50,7 @@ export default function Projects({}) {
         <h3 className="uppercase tracking-[20px] text-gray-400 text-2xl text-center mb-8">
           Personal Projects
         </h3>
-        <div className="flex max-w-xs md:max-w-3xl gap-6 mx-auto items-center relative border bg-[#253237] border-[#b69eff] rounded-lg p-2">
+        <div className="flex max-w-xs md:max-w-3xl gap-6 mx-auto items-center relative border bg-[#253237] border-[#b69eff] rounded-lg">
           <div className="max-w-xs md:max-w-3xl rounded-lg">
             <Swiper
               slidesPerView={1}
@@ -69,9 +69,8 @@ export default function Projects({}) {
                   <Image
                       className="h-36 w-48 m-2"
                       src={`${project_info.icon}`}
-                      
                       width={"999"}
-height={"999"}
+                      height={"999"}
                       alt={"project image"}
                     />
                   
@@ -89,7 +88,6 @@ height={"999"}
                         onMouseEnter={() => setIsHovered(true)}
                         onMouseLeave={() => setIsHovered(false)}
                         className="transition-colors duration-200 ease-in-out"
-                        style={{ transform: "translateX(-10px)" }}
                       />
                     ) : (
                       <></>
