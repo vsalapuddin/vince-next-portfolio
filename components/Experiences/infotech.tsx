@@ -5,7 +5,7 @@ export default function infotech() {
     <article className="flex flex-col rounded-lg items-center space-y-7 snap-center p-10 overflow-hidden">
       <Image
         width={"999"}
-height={"999"}
+        height={"999"}
         className="w-24 h-24 rounded-full xl:w-[150px] xl:h-[150px] object-cover object-center"
         src="/Experience/infotech.png"
         alt="Infotech"
@@ -14,12 +14,27 @@ height={"999"}
         <h4 className="text-3xl font-light">Infotech</h4>
         <p className="font-bold mt-1">Software Engineer Intern</p>
         <div className="flex space-x-2 my-2">
-          <Image width={"999"}
-height={"999"} className="h-8 w-8" src="/iconSkills/c++.png" alt={"c++"} />
-          <Image width={"999"}
-height={"999"} className="h-8 w-8" src="/iconSkills/vue.png" alt={"vue"} />
-          <Image width={"999"}
-height={"999"} className="h-8 w-8" src="/iconSkills/git.png" alt={"git"} />
+          <Image
+            width={"999"}
+            height={"999"}
+            className="h-8 w-8"
+            src="/iconSkills/c++.png"
+            alt={"c++"}
+          />
+          <Image
+            width={"999"}
+            height={"999"}
+            className="h-8 w-8"
+            src="/iconSkills/vue.png"
+            alt={"vue"}
+          />
+          <Image
+            width={"999"}
+            height={"999"}
+            className="h-8 w-8"
+            src="/iconSkills/git.png"
+            alt={"git"}
+          />
         </div>
         <p className="uppercase text-gray-300">May 2021 - Sep 2021</p>
         <ul className="text-m text-gray-200">

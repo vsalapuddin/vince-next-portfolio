@@ -92,7 +92,7 @@ export default function Hero() {
                   className={`text-gray-400 text-2xl ${"animate-bounce"}`}
                   alt={"down arrow"}
                   width={"999"}
-height={"999"}
+                  height={"999"}
                 />
               </div>
             </Link>

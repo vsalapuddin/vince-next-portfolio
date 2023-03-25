@@ -98,7 +98,7 @@ function Skills() {
                 <div className="p-2 w-12 h-12 md:w-20 md:h-20 bg-gray-900 rounded-full flex items-center justify-center">
                   <Image
                     width={"999"}
-height={"999"}
+                    height={"999"}
                     src={`/iconSkills/${skill.src}.png`}
                     alt="skills"
                     style={{

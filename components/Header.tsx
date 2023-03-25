@@ -10,7 +10,7 @@ export default function Header({}) {
   const [isHovered2, setIsHovered2] = useState(false);
   const [isHovered3, setIsHovered3] = useState(false);
   return (
-    <header className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
+    <header className="sticky top-0 p-1 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center rounded-lg bg-[#181717]">
       <motion.div
         initial={{ x: -500, opacity: 0, scale: 0.5 }}
         animate={{ x: 0, opacity: 1, scale: 1 }}
@@ -53,6 +53,7 @@ export default function Header({}) {
       >
         <Link
           href="/VinceSalapuddinResume.pdf"
+          target="_blank"
           className="px-6 py-3 border-[#242424] rounded-full uppercase tracking-widest
      text-gray-400 transition-all hover:text-[#b69eff]"
           download

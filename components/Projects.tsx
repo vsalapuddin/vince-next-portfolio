@@ -50,7 +50,7 @@ export default function Projects({}) {
         <h3 className="uppercase tracking-[20px] text-gray-400 text-2xl text-center mb-8">
           Personal Projects
         </h3>
-        <div className="flex max-w-xs md:max-w-3xl gap-6 mx-auto items-center relative border bg-[#253237] border-[#b69eff] rounded-lg">
+        <div className="flex max-w-xs md:max-w-3xl gap-6 mx-auto items-center relative border bg-[#181717] border-[#b69eff] rounded-lg">
           <div className="max-w-xs md:max-w-3xl rounded-lg">
             <Swiper
               slidesPerView={1}
@@ -67,18 +67,20 @@ export default function Projects({}) {
                   className="mb-10 flex-col md:flex-row flex items-center"
                 >
                   <Image
-                      className="h-18 w-24 m-2 object-cover object-center"
-                      src={`${project_info.icon}`}
-                      width={"999"}
-                      height={"999"}
-                      alt={"project image"}
-                    />
-                  
+                    className="h-18 w-24 m-2 object-cover object-center"
+                    src={`${project_info.icon}`}
+                    width={"999"}
+                    height={"999"}
+                    alt={"project image"}
+                  />
+
                   <div className="h-64 p-4 rounded-xl position-absolute">
                     <h3 className="text-xl my-0 md:my-4">
                       {project_info.name}
                     </h3>
-                    <p className="text-sm md:text-lg  text-gray-200">{project_info.desc}</p>
+                    <p className="text-sm md:text-lg  text-gray-200">
+                      {project_info.desc}
+                    </p>
                     {project_info.github_link ? (
                       <SocialIcon
                         url={project_info.github_link}

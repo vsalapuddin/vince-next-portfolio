@@ -9,20 +9,40 @@ export default function ufit() {
         src="/Experience/uf.png"
         alt="UFIT"
         width={"999"}
-height={"999"}
+        height={"999"}
       />
       <div className="px-0 md:px-10">
         <h4 className="text-3xl font-light">UF Information Technology</h4>
         <p className="font-bold mt-1">Software Developer</p>
         <div className="flex space-x-2 my-2">
-          <Image width={"999"}
-height={"999"} className="h-8 w-8" src="/iconSkills/react.png" alt={"react"} />
-          <Image width={"999"}
-height={"999"} className="h-8 w-8" src="/iconSkills/node.png" alt={"node"} />
-          <Image width={"999"}
-height={"999"} className="h-8 w-8" src="/iconSkills/matui.png" alt={"matui"} />
-          <Image width={"999"}
-height={"999"} className="h-8 w-8" src="/iconSkills/git.png" alt={"git"} />
+          <Image
+            width={"999"}
+            height={"999"}
+            className="h-8 w-8"
+            src="/iconSkills/react.png"
+            alt={"react"}
+          />
+          <Image
+            width={"999"}
+            height={"999"}
+            className="h-8 w-8"
+            src="/iconSkills/node.png"
+            alt={"node"}
+          />
+          <Image
+            width={"999"}
+            height={"999"}
+            className="h-8 w-8"
+            src="/iconSkills/matui.png"
+            alt={"matui"}
+          />
+          <Image
+            width={"999"}
+            height={"999"}
+            className="h-8 w-8"
+            src="/iconSkills/git.png"
+            alt={"git"}
+          />
         </div>
         <p className="uppercase text-gray-300">Jul 2022 - Present</p>
         <ul className="text-m text-gray-200">

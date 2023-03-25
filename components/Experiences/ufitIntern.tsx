@@ -5,7 +5,7 @@ export default function ufit() {
     <article className="flex flex-col rounded-lg items-center space-y-7 snap-center p-10 overflow-hidden">
       <Image
         width={"999"}
-height={"999"}
+        height={"999"}
         className="w-24 h-24 rounded-full xl:w-[150px] xl:h-[150px] object-cover object-center"
         src="/Experience/uf.png"
         alt="UFIT"
@@ -14,8 +14,13 @@ height={"999"}
         <h4 className="text-3xl font-light">UF Information Technology</h4>
         <p className="font-bold mt-1">Application Developer Intern</p>
         <div className="flex space-x-2 my-2">
-          <Image width={"999"}
-height={"999"} className="h-8 w-8" src="/iconSkills/sql.png" alt="sql" />
+          <Image
+            width={"999"}
+            height={"999"}
+            className="h-8 w-8"
+            src="/iconSkills/sql.png"
+            alt="sql"
+          />
         </div>
         <p className="uppercase text-gray-300">Jan 2022 - Jul 2022</p>
         <ul className="text-m text-gray-200">
