@@ -50,7 +50,12 @@ export default function Projects({}) {
         <h3 className="uppercase tracking-[20px] text-gray-400 text-xl md:text-2xl text-center mb-8">
           Personal Projects
         </h3>
-        <motion.div className="flex max-w-xs md:max-w-3xl gap-6 mx-auto items-center relative border bg-[#181717] border-[#b69eff] rounded-lg">
+        <motion.div
+          initial={{ opacity: 0 }}
+          transition={{ duration: 1.5 }}
+          whileInView={{ opacity: 1 }}
+          className="flex max-w-xs md:max-w-3xl gap-6 mx-auto items-center relative border bg-[#181717] border-[#b69eff] rounded-lg"
+        >
           <div className="max-w-xs md:max-w-3xl rounded-lg">
             <Swiper
               slidesPerView={1}
