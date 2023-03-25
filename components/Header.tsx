@@ -3,18 +3,17 @@ import { useState } from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Header({}) {
   const [isHovered, setIsHovered] = useState(false);
   const [isHovered2, setIsHovered2] = useState(false);
   const [isHovered3, setIsHovered3] = useState(false);
   return (
-    <header className="sticky top-0 p-1 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center rounded-lg bg-[#181717]">
+    <header className="sticky top-0 p-1 flex items-start justify-between max-w-5xl mx-auto z-20 xl:items-center rounded-lg bg-[#181717]">
       <motion.div
         initial={{ x: -500, opacity: 0, scale: 0.5 }}
         animate={{ x: 0, opacity: 1, scale: 1 }}
-        transition={{ duration: 1.5 }}
+        transition={{ duration: 1 }}
         className="flex flex-row items-center"
       >
         <SocialIcon

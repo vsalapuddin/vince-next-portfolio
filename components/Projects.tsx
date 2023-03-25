@@ -42,15 +42,15 @@ export default function Projects({}) {
   return (
     <header className="">
       <motion.div
-        initial={{ y: 200, opacity: 0 }}
-        transition={{ duration: 1 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ x: -200, opacity: 0 }}
+        transition={{ duration: 1.5 }}
+        whileInView={{ x: 0, opacity: 1 }}
         className="flex flex-col relative h-screen justify-center mx-auto items-center"
       >
         <h3 className="uppercase tracking-[20px] text-gray-400 text-2xl text-center mb-8">
           Personal Projects
         </h3>
-        <div className="flex max-w-xs md:max-w-3xl gap-6 mx-auto items-center relative border bg-[#181717] border-[#b69eff] rounded-lg">
+        <motion.div className="flex max-w-xs md:max-w-3xl gap-6 mx-auto items-center relative border bg-[#181717] border-[#b69eff] rounded-lg">
           <div className="max-w-xs md:max-w-3xl rounded-lg">
             <Swiper
               slidesPerView={1}
@@ -99,7 +99,7 @@ export default function Projects({}) {
               ))}
             </Swiper>
           </div>
-        </div>
+        </motion.div>
       </motion.div>
     </header>
   );
