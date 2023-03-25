@@ -47,7 +47,7 @@ export default function Projects({}) {
         whileInView={{ x: 0, opacity: 1 }}
         className="flex flex-col relative h-screen justify-center mx-auto items-center"
       >
-        <h3 className="uppercase tracking-[20px] text-gray-400 text-2xl text-center mb-8">
+        <h3 className="uppercase tracking-[20px] text-gray-400 text-xl md:text-2xl text-center mb-8">
           Personal Projects
         </h3>
         <motion.div className="flex max-w-xs md:max-w-3xl gap-6 mx-auto items-center relative border bg-[#181717] border-[#b69eff] rounded-lg">

@@ -18,7 +18,7 @@ export default function Experience({}) {
         whileInView={{ x: 0, opacity: 1 }}
         className="h-screen flex flex-col justify-center items-center"
       >
-        <h3 className="uppercase tracking-[15px] md:tracking-[20px] text-gray-400 text-2xl text-center mb-8">
+        <h3 className="uppercase tracking-[15px] md:tracking-[20px] text-gray-400 text-xl md:text-2xl text-center mb-8">
           Experience
         </h3>
         <motion.div

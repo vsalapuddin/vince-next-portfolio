@@ -73,7 +73,7 @@ function Skills() {
         transition={{ duration: 1.5 }}
         className="flex flex-col relative h-screen max-w-7xl  justify-center mx-auto items-center"
       >
-        <h3 className="uppercase tracking-[20px] text-gray-400 text-2xl text-center mb-8">
+        <h3 className="uppercase tracking-[20px] text-gray-400 text-xl md:text-2xl text-center mb-8">
           Skills
         </h3>
         <div className="mt-8 grid grid-cols-4 items-center text-center justify-items-center justify-content-center">

@@ -12,7 +12,7 @@ function Contact({}) {
       whileInView={{ x: 0, opacity: 1 }}
       className="h-screen flex flex-col justify-center mx-auto items-center text-center max-w-sm"
     >
-      <h3 className="uppercase tracking-[20px] text-gray-400 text-2xl mb-8">
+      <h3 className="uppercase tracking-[20px] text-gray-400 text-xl md:text-2xl mb-8">
         Get In Touch
       </h3>
       <p className="text-m text-gray-200 mb-8">
