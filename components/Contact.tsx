@@ -36,10 +36,6 @@ export default function Contact(): JSX.Element {
         email: "",
         message: "",
       });
-    } else {
-      setStatus({
-        info: { error: true, msg },
-      });
     }
   };
 
