@@ -79,12 +79,12 @@ export default function Contact(): JSX.Element {
 
   return (
     <motion.div
-      initial={{ y: 200, opacity: 0 }}
-      transition={{ duration: 1 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ x: -200, opacity: 0 }}
+      transition={{ duration: 1.5 }}
+      whileInView={{ x: 0, opacity: 1 }}
       className="h-screen flex flex-col justify-center mx-auto items-center text-center max-w-sm"
     >
-      <h3 className="uppercase tracking-[20px] text-gray-400 text-2xl mb-8">
+      <h3 className="uppercase tracking-[20px] text-gray-400 text-xl md:text-2xl mb-8">
         Get In Touch
       </h3>
       <form onSubmit={handleOnSubmit} className="w-full max-w-md">

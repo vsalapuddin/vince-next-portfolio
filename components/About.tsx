@@ -6,18 +6,18 @@ export default function About({}: Props) {
   return (
     <header className="p-5 flex items-start justify-between ">
       <motion.div
-        initial={{ y: 200, opacity: 0 }}
+        initial={{ opacity: 0 }}
         transition={{ duration: 1 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        className="flex flex-col relative h-screen md:text-left md:flex-row max-w-7xl px-0 md:px-10 justify-evenly mx-auto items-center"
+        whileInView={{ opacity: 1 }}
+        className="flex flex-col relative h-screen md:text-left md:flex-row px-0 max-w-5xl md:px-10 justify-center mx-auto items-center"
       >
-        <h3 className="absolute top-24 uppercase tracking-[15px] md:tracking-[15px] text-gray-500 text-xl md:text-2xl">
+        <h3 className="absolute top-24 md:top-36 uppercase tracking-[15px] md:tracking-[15px] text-gray-500 text-xl md:text-2xl">
           About Me
         </h3>
 
         <Image
           src="/about.jpeg"
-          className=" mt-20 -mb-10 md:mt-0 md:mb-0 flex-shrink-0 w-48 h-48 rounded-full object-cover  md:w-64 md:h-64 xl:w-[400px] xl:h-[400px] ring-4 ring-gray-500"
+          className=" mt-20 mb-10 md:mt-0 md:mb-0 flex-shrink-0 w-48 h-48 rounded-full object-cover  md:w-64 md:h-64 xl:w-[400px] xl:h-[400px] ring-4 ring-gray-500"
           width={"999"}
           height={"999"}
           alt="Vince Salapuddin"

@@ -3,14 +3,15 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Typewriter from "typewriter-effect";
 
 export default function Hero() {
   const [isAnimating, setIsAnimating] = useState(true);
 
   return (
     <motion.div
-      initial={{ y: -500, opacity: 0, scale: 1 }}
-      animate={{ y: 0, opacity: 1, scale: 1 }}
+      initial={{ opacity: 0, scale: 1 }}
+      animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1.5 }}
       className="h-screen flex flex-col space-y-8 items-center justify-center"
     >
@@ -20,8 +21,15 @@ export default function Hero() {
           <h2 className="text-sm uppercase text-gray-400 pb-2 tracking-[5px] md:tracking-[15px] lg:tracking-[15px] text-center mb-4">
             Software Developer
           </h2>
-          <h1 className="text-4xl lg:text-6xl font-semibold text-center">
-            Vince Salapuddin
+
+          <h1 className="text-4xl lg:text-6xl font-semibold text-center animate-type group-hover:animate-type-reverse whitespace-nowrap text-brand-accent will-change-transform">
+            <Typewriter
+              options={{
+                strings: ["Vince Salapuddin"],
+                autoStart: true,
+                loop: true,
+              }}
+            />
           </h1>
           <div className="pt-5 text-center">
             <Link

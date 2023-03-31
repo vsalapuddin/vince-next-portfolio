@@ -13,15 +13,20 @@ export default function Experience({}) {
   return (
     <header className="">
       <motion.div
-        initial={{ y: 200, opacity: 0 }}
+        initial={{ x: -200, opacity: 0 }}
         transition={{ duration: 1 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
         className="h-screen flex flex-col justify-center items-center"
       >
-        <h3 className="uppercase tracking-[15px] md:tracking-[20px] text-gray-400 text-2xl text-center mb-8">
+        <h3 className="uppercase tracking-[15px] md:tracking-[20px] text-gray-400 text-xl md:text-2xl text-center mb-8">
           Experience
         </h3>
-        <div className="flex border bg-[#181717] border-[#b69eff] rounded-lg max-w-xs md:max-w-xl">
+        <motion.div
+          initial={{ opacity: 0 }}
+          transition={{ duration: 1 }}
+          whileInView={{ opacity: 1 }}
+          className="flex border bg-[#181717] border-[#b69eff] rounded-lg max-w-xs md:max-w-xl"
+        >
           <Swiper
             slidesPerView={1}
             loop={true}
@@ -50,7 +55,7 @@ export default function Experience({}) {
               <IFAS />
             </SwiperSlide>
           </Swiper>
-        </div>
+        </motion.div>
       </motion.div>
     </header>
   );

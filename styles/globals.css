@@ -30,3 +30,24 @@
     scrollbar-width: none; /* Firefox */
   }
 }
+
+/* Detect iOS device and set notch color */
+:root {
+  --notch-color: #181717; /* set your desired notch color */
+  --ios: calc(1px * (env(safe-area-inset-top) + env(safe-area-inset-bottom)));
+}
+@media (max-width: 767px) and (width: 100%) and (-webkit-touch-callout: none) {
+  body {
+    padding-top: var(--ios);
+  }
+  /* set notch color */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: env(safe-area-inset-top);
+    background-color: var(--notch-color);
+  }
+}
