@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function ufit() {
   return (
-    <article className="flex flex-col rounded-lg items-center space-y-7 snap-center p-10 overflow-hidden">
+    <article className="flex flex-col rounded-lg items-center space-y-4 md:space-y-7 snap-center p-5 md:p-10 overflow-hidden">
       <Image
         className="w-24 h-24 rounded-full xl:w-[150px] xl:h-[150px] object-cover object-center"
         src="/Experience/uf.png"

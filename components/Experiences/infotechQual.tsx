@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function infotech() {
   return (
-    <article className="flex flex-col rounded-lg items-center space-y-7 snap-center p-10 overflow-hidden">
+    <article className="flex flex-col rounded-lg items-center space-y-4 md:space-y-7 snap-center p-5 md:p-10 overflow-hidden">
       <Image
         width={"999"}
         height={"999"}
