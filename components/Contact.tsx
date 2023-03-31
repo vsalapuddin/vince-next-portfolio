@@ -1,10 +1,82 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import { motion } from "framer-motion";
 
-const EmailButton = () => {
-  window.open("mailto:vsalapuddin@ufl.edu", "_blank");
-};
-function Contact({}) {
+interface Status {
+  submitted: boolean;
+  submitting: boolean;
+  info: { error: boolean; msg: string | null };
+}
+
+interface Inputs {
+  email: string;
+  message: string;
+}
+
+export default function Contact(): JSX.Element {
+  const [status, setStatus] = useState<Status>({
+    submitted: false,
+    submitting: false,
+    info: { error: false, msg: null },
+  });
+
+  const [inputs, setInputs] = useState<Inputs>({
+    email: "",
+    message: "",
+  });
+
+  const handleServerResponse = (ok: boolean, msg: string) => {
+    if (ok) {
+      setStatus({
+        submitted: true,
+        submitting: false,
+        info: { error: false, msg },
+      });
+      setInputs({
+        email: "",
+        message: "",
+      });
+    } else {
+      setStatus({
+        info: { error: true, msg },
+      });
+    }
+  };
+
+  const handleOnChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    e.persist();
+    setInputs((prev) => ({
+      ...prev,
+      [e.target.id]: e.target.value,
+    }));
+    setStatus({
+      submitted: false,
+      submitting: false,
+      info: { error: false, msg: null },
+    });
+  };
+
+  const handleOnSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setStatus((prevStatus) => ({ ...prevStatus, submitting: true }));
+    axios({
+      method: "POST",
+      url: "https://formspree.io/f/mlekpbzp",
+      data: inputs,
+    })
+      .then((response) => {
+        handleServerResponse(
+          true,
+          "Thank you, your message has been submitted!"
+        );
+      })
+      .catch((error) => {
+        handleServerResponse(false, error.response.data.error);
+      });
+  };
+
   return (
     <motion.div
       initial={{ y: 200, opacity: 0 }}
@@ -15,18 +87,55 @@ function Contact({}) {
       <h3 className="uppercase tracking-[20px] text-gray-400 text-2xl mb-8">
         Get In Touch
       </h3>
-      <p className="text-m text-gray-200 mb-8">
-        My inbox is always open. Whether you have a question or just want to
-        create your next idea together!
-      </p>
-      <button
-        className="border border-[#b69eff] text-[#b69eff] font-bold py-2 px-4 rounded-lg transition duration-300 ease-in-out hover:text-[#ffffff] hover:bg-[#b69eff]"
-        onClick={EmailButton}
-      >
-        Say Hello
-      </button>
+      <form onSubmit={handleOnSubmit} className="w-full max-w-md">
+        <div className="mb-4 px-4">
+          <label htmlFor="email" className="block text-gray-400 font-bold mb-2">
+            Email
+          </label>
+          <input
+            id="email"
+            type="email"
+            name="_replyto"
+            onChange={handleOnChange}
+            required
+            value={inputs.email}
+            className="appearance-none bg-[#181717] border rounded w-full py-2 px-3 text-white border-[#b69eff] leading-tight focus:outline-none focus:shadow-outline"
+          />
+        </div>
+        <div className="mb-6 px-4">
+          <label
+            htmlFor="message"
+            className="block  text-gray-400 font-bold mb-2"
+          >
+            Message
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            onChange={handleOnChange}
+            required
+            value={inputs.message}
+            className="bg-[#181717] appearance-none border border-[#b69eff] rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
+          />
+        </div>
+        <button
+          type="submit"
+          disabled={status.submitting}
+          className="bg-[#b69eff] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+        >
+          {!status.submitting
+            ? !status.submitted
+              ? "Submit"
+              : "Submitted"
+            : "Submitting..."}
+        </button>
+      </form>
+      {status.info.error && (
+        <div className="error">Error: {status.info.msg}</div>
+      )}
+      {!status.info.error && status.info.msg && (
+        <p className="pt-4">{status.info.msg}</p>
+      )}
     </motion.div>
   );
 }
-
-export default Contact;
