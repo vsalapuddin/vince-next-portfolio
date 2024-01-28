@@ -22,7 +22,7 @@ export default function ufit() {
             alt="sql"
           />
         </div>
-        <p className="uppercase text-gray-300">Jan 2022 - Jul 2022</p>
+        <p className="uppercase text-gray-300">Jan 2022 - July 2022</p>
         <ul className="text-m text-gray-200">
           <li>
             Worked within an enterprise system to develop solutions for UF’s

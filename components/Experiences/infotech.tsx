@@ -36,11 +36,11 @@ export default function infotech() {
             alt={"git"}
           />
         </div>
-        <p className="uppercase text-gray-300">May 2021 - Sep 2021</p>
+        <p className="uppercase text-gray-300">May 2021 - Sept 2021</p>
         <ul className="text-m text-gray-200">
           <li>
-            Developed a new time-entry application for employees for faster,
-            more accurate timesheets.
+            Developed a time-entry application for employees for faster, more
+            accurate timesheets.
           </li>
           <li>
             Created solutions to optimize the testing process as well as
