@@ -19,7 +19,7 @@ export default function Hero() {
         <div></div>
         <div>
           <h2 className="text-sm uppercase text-gray-400 pb-2 tracking-[5px] md:tracking-[15px] lg:tracking-[15px] text-center mb-4">
-            Software Developer
+            Software Engineer
           </h2>
 
           <h1 className="text-4xl lg:text-6xl font-semibold text-center animate-type group-hover:animate-type-reverse whitespace-nowrap text-brand-accent will-change-transform">

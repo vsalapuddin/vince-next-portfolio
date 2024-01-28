@@ -23,9 +23,9 @@ export default function About({}: Props) {
           alt="Vince Salapuddin"
         />
         <motion.div
-          initial={{ y: 200, opacity: 0 }}
+          initial={{ opacity: 0 }}
           transition={{ duration: 1 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1 }}
           className="space-y-10 px-0 md:px-10 w-full"
         >
           <p className="text-md md:text-lg font-sans md:leading-loose ">

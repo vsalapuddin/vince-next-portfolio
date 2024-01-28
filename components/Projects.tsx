@@ -42,9 +42,9 @@ export default function Projects({}) {
   return (
     <header className="">
       <motion.div
-        initial={{ x: -200, opacity: 0 }}
+        initial={{ opacity: 0 }}
         transition={{ duration: 1.5 }}
-        whileInView={{ x: 0, opacity: 1 }}
+        whileInView={{ opacity: 1 }}
         className="flex flex-col relative h-screen justify-center mx-auto items-center"
       >
         <h3 className="uppercase tracking-[20px] text-gray-400 text-xl md:text-2xl text-center mb-8">

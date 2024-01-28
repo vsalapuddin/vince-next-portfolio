@@ -79,9 +79,9 @@ function Skills() {
         <div className="mt-8 grid grid-cols-4 items-center text-center justify-items-center justify-content-center">
           {skills?.map((skill, i) => (
             <motion.div
-              initial={{ x: -i * 5, opacity: 0 }}
-              transition={{ duration: 1 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0 }}
+              transition={{ duration: 1.5 }}
+              whileInView={{ opacity: 1 }}
               key={i}
               className="text-center mx-4 my-1 items-center"
             >
