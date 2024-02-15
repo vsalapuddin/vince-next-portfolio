@@ -6,6 +6,7 @@ import UFITIntern from "./Experiences/ufitIntern";
 import InfotechQual from "./Experiences/infotechQual";
 import CityTraffic from "./Experiences/cityTraffic";
 import IFAS from "./Experiences/ifas";
+import LexisNexis from "./Experiences/lexisnexis";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper";
 
@@ -36,6 +37,9 @@ export default function Experience({}) {
             }}
             modules={[Pagination, Autoplay]}
           >
+            <SwiperSlide>
+              <LexisNexis />
+            </SwiperSlide>
             <SwiperSlide>
               <UFIT />
             </SwiperSlide>

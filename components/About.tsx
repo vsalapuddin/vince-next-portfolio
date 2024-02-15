@@ -29,12 +29,12 @@ export default function About({}: Props) {
           className="space-y-10 px-0 md:px-10 w-full"
         >
           <p className="text-md md:text-lg font-sans md:leading-loose ">
-            Hello! My name is Vince Salapuddin and I am a highly motivated,
-            recent computer science graduate from the University of Florida. I
-            am currently working as a software developer for the University of
-            Florida, working in an agile environment, creating features for the
-            student portal and developing a mobile application. With my passion
-            for development, capacity to learn quickly, and ability to excel in
+            Hello! My name is Vince Salapuddin and I am a highly motivated
+            Software Engineer as well as a computer science graduate from the
+            University of Florida. I am currently working as a Software Engineer
+            for LexisNexis, developing HPCC software and migrating existing
+            applications to a cloud-based environment. With my passion for
+            development, capacity to learn quickly, and ability to excel in
             dynamic environments, I am confident that I would be a valuable
             member to any team and am excited for new opportunities to improve
             my craft.
