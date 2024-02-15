@@ -21,6 +21,7 @@ export default function About({}: Props) {
           width={"999"}
           height={"999"}
           alt="Vince Salapuddin"
+          priority
         />
         <motion.div
           initial={{ opacity: 0 }}
