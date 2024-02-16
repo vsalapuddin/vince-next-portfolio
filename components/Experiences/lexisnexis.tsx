@@ -12,16 +12,11 @@ export default function lexisnexis() {
         height={"999"}
       />
       <div className="px-0 md:px-10">
-        <h4 className="text-3xl font-light">LexisNexis</h4>
-        <p className="font-bold mt-1">Software Engineer I</p>
+        <h4 className="text-3xl font-light text-[#b69eff] text-center">
+          LexisNexis
+        </h4>
+        <p className="font-bold mt-1 italic text-center">Software Engineer I</p>
         <div className="flex space-x-2 my-2">
-          <Image
-            width={"999"}
-            height={"999"}
-            className="h-8 w-8"
-            src="/iconSkills/hpcc.jpg"
-            alt={"node"}
-          />
           <Image
             width={"999"}
             height={"999"}

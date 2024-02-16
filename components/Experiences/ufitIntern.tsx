@@ -11,8 +11,12 @@ export default function ufit() {
         alt="UFIT"
       />
       <div className="px-0 md:px-10">
-        <h4 className="text-3xl font-light">UF Information Technology</h4>
-        <p className="font-bold mt-1">Application Developer Intern</p>
+        <h4 className="text-3xl font-light text-[#b69eff] text-center">
+          UF Information Technology
+        </h4>
+        <p className="font-bold mt-1 italic text-center">
+          Application Developer Intern
+        </p>
         <div className="flex space-x-2 my-2">
           <Image
             width={"999"}

@@ -11,8 +11,10 @@ export default function ufit() {
         alt="City Traffic"
       />
       <div className="px-0 md:px-10">
-        <h4 className="text-3xl font-light">City Traffic</h4>
-        <p className="font-bold mt-1">Back-End Developer</p>
+        <h4 className="text-3xl font-light text-[#b69eff] text-center">
+          City Traffic
+        </h4>
+        <p className="font-bold mt-1 italic text-center">Back-End Developer</p>
         <div className="flex space-x-2 my-2">
           <Image
             width={"999"}

@@ -11,8 +11,12 @@ export default function ifas() {
         height={"999"}
       />
       <div className="px-0 md:px-10">
-        <h4 className="text-3xl font-light">IFAS Family Nutrition Program </h4>
-        <p className="font-bold mt-1">Data Entry Specialist</p>
+        <h4 className="text-3xl font-light text-[#b69eff] text-center">
+          IFAS Family Nutrition Program{" "}
+        </h4>
+        <p className="font-bold mt-1 italic text-center">
+          Data Entry Specialist
+        </p>
         <div className="flex space-x-2 my-2">
           <Image
             width={"999"}
