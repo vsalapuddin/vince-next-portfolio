@@ -85,8 +85,11 @@ export default function Contact(): JSX.Element {
       </h3>
       <form onSubmit={handleOnSubmit} className="w-full max-w-md">
         <div className="mb-4 px-4">
-          <label htmlFor="email" className="block text-gray-400 font-bold mb-2">
-            Email
+          <label
+            htmlFor="email"
+            className="block text-gray-400 font-bold text-start"
+          >
+            Your Email
           </label>
           <input
             id="email"
@@ -95,13 +98,13 @@ export default function Contact(): JSX.Element {
             onChange={handleOnChange}
             required
             value={inputs.email}
-            className="appearance-none bg-[#181717] border rounded w-full py-2 px-3 text-white border-[#b69eff] leading-tight focus:outline-none focus:shadow-outline"
+            className="appearance-none bg-[#181717] border-b-4 rounded w-full py-2 px-3 text-white border-[#b69eff] leading-tight focus:outline-none focus:shadow-outline"
           />
         </div>
         <div className="mb-6 px-4">
           <label
             htmlFor="message"
-            className="block  text-gray-400 font-bold mb-2"
+            className="block  text-gray-400 font-bold text-start"
           >
             Message
           </label>
@@ -111,7 +114,7 @@ export default function Contact(): JSX.Element {
             onChange={handleOnChange}
             required
             value={inputs.message}
-            className="bg-[#181717] appearance-none border border-[#b69eff] rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
+            className="bg-[#181717] appearance-none border-b-4 border-[#b69eff] rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
           />
         </div>
         <button
