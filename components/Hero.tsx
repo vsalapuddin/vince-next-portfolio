@@ -12,7 +12,7 @@ export default function Hero() {
     <motion.div
       initial={{ opacity: 0, scale: 1 }}
       animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 1.5 }}
+      transition={{ duration: 1 }}
       className="h-screen flex flex-col space-y-8 items-center justify-center"
     >
       <div className="flex flex-col h-screen items-center justify-between">

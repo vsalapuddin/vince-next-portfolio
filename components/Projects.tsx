@@ -43,7 +43,7 @@ export default function Projects({}) {
     <header className="">
       <motion.div
         initial={{ opacity: 0 }}
-        transition={{ duration: 1.5 }}
+        transition={{ duration: 1 }}
         whileInView={{ opacity: 1 }}
         className="flex flex-col relative h-screen justify-center mx-auto items-center"
       >
@@ -52,7 +52,7 @@ export default function Projects({}) {
         </h3>
         <motion.div
           initial={{ opacity: 0 }}
-          transition={{ duration: 1.5 }}
+          transition={{ duration: 1 }}
           whileInView={{ opacity: 1 }}
           className="flex max-w-xs md:max-w-3xl gap-6 mx-auto items-center relative border-t-8 bg-[#181717] border-[#b69eff] rounded-lg"
         >

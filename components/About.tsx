@@ -17,7 +17,7 @@ export default function About({}: Props) {
 
         <Image
           src="/about.jpeg"
-          className=" mt-20 mb-10 md:mt-0 md:mb-0 flex-shrink-0 w-48 h-48 rounded-full object-cover  md:w-64 md:h-64 xl:w-[400px] xl:h-[400px] ring-4 ring-gray-500"
+          className=" mt-20 mb-10 md:mt-0 md:mb-0 flex-shrink-0 w-48 h-48 rounded-full object-cover  md:w-64 md:h-64 xl:w-[400px] xl:h-[400px] ring-8 ring-[#b69eff]"
           width={"999"}
           height={"999"}
           alt="Vince Salapuddin"

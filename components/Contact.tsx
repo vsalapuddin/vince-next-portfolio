@@ -76,7 +76,7 @@ export default function Contact(): JSX.Element {
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      transition={{ duration: 1.5 }}
+      transition={{ duration: 1 }}
       whileInView={{ opacity: 1 }}
       className="h-screen flex flex-col justify-center mx-auto items-center text-center max-w-sm"
     >
