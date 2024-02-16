@@ -54,7 +54,7 @@ export default function Projects({}) {
           initial={{ opacity: 0 }}
           transition={{ duration: 1.5 }}
           whileInView={{ opacity: 1 }}
-          className="flex max-w-xs md:max-w-3xl gap-6 mx-auto items-center relative border bg-[#181717] border-[#b69eff] rounded-lg"
+          className="flex max-w-xs md:max-w-3xl gap-6 mx-auto items-center relative border-t-8 bg-[#181717] border-[#b69eff] rounded-lg"
         >
           <div className="max-w-xs md:max-w-3xl rounded-lg">
             <Swiper

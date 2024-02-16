@@ -26,7 +26,7 @@ export default function Experience({}) {
           initial={{ opacity: 0 }}
           transition={{ duration: 1 }}
           whileInView={{ opacity: 1 }}
-          className="flex border bg-[#181717] border-[#b69eff] rounded-lg max-w-xs md:max-w-xl"
+          className="flex border-t-8 bg-[#181717] border-[#b69eff] rounded-lg max-w-xs md:max-w-xl"
         >
           <Swiper
             slidesPerView={1}
