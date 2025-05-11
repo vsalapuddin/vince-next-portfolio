@@ -57,7 +57,7 @@ export default function Header({}) {
      text-gray-400 transition-all hover:text-[#b69eff]"
           download
         >
-          RESUME
+          résumé
         </Link>
       </motion.div>
     </header>
