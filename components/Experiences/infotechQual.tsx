@@ -19,20 +19,16 @@ export default function infotech() {
           Software Quality Assurance / Intern
         </p>
         <div className="flex space-x-2 my-2">
-          <Image
-            width={"999"}
-            height={"999"}
-            className="h-8 w-8"
-            src="/iconSkills/c++.png"
-            alt={"c++"}
-          />
-          <Image
-            width={"999"}
-            height={"999"}
-            className="h-8 w-8"
-            src="/iconSkills/python.png"
-            alt={"python"}
-          />
+          <span
+            className={`inline-flex items-center rounded bg-[#b69eff] px-2 py-1 text-sm font-medium `}
+          >
+            C++
+          </span>
+          <span
+            className={`inline-flex items-center rounded bg-[#b69eff] px-2 py-1 text-sm font-medium `}
+          >
+            Python
+          </span>
         </div>
         <p className="uppercase text-gray-300">May 2020 - May 2021</p>
         <ul className="text-m text-gray-200">

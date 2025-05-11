@@ -17,13 +17,21 @@ export default function lexisnexis() {
         </h4>
         <p className="font-bold mt-1 italic text-center">Software Engineer I</p>
         <div className="flex space-x-2 my-2">
-          <Image
-            width={"999"}
-            height={"999"}
-            className="h-8 w-8"
-            src="/iconSkills/azure.png"
-            alt={"react"}
-          />
+          <span
+            className={`inline-flex items-center rounded bg-[#b69eff] px-2 py-1 text-sm font-medium `}
+          >
+            Azure
+          </span>
+          <span
+            className={`inline-flex items-center rounded bg-[#b69eff] px-2 py-1 text-sm font-medium `}
+          >
+            ECL
+          </span>
+          <span
+            className={`inline-flex items-center rounded bg-[#b69eff] px-2 py-1 text-sm font-medium `}
+          >
+            Python
+          </span>
         </div>
         <p className="uppercase text-gray-300">Jan 2024 - Present</p>
         <ul className="text-m text-gray-200">

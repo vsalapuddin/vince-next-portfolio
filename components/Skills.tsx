@@ -4,62 +4,62 @@ import Image from "next/image";
 const skills = [
   {
     src: "react",
-    count: 85,
+    count: 100,
     title: "React",
   },
   {
     src: "javascript",
-    count: 85,
+    count: 100,
     title: "Javascript",
   },
   {
     src: "c++",
-    count: 85,
+    count: 100,
     title: "C++",
   },
   {
     src: "git",
-    count: 85,
+    count: 100,
     title: "Git",
   },
   {
     src: "typescript",
-    count: 80,
+    count: 100,
     title: "TypeScript",
   },
   {
     src: "html",
-    count: 75,
+    count: 100,
     title: "HTML",
   },
   {
     src: "css",
-    count: 70,
+    count: 100,
     title: "CSS",
   },
   {
     src: "matui",
-    count: 70,
+    count: 100,
     title: "Material Ui",
   },
   {
     src: "tailwind",
-    count: 65,
+    count: 100,
     title: "Tailwind CSS",
   },
   {
     src: "sql",
-    count: 60,
+    count: 100,
     title: "SQL",
   },
   {
     src: "node",
-    count: 55,
+    count: 100,
     title: "Node",
   },
   {
     src: "python",
-    count: 45,
+    count: 100,
     title: "Python",
   },
 ];

@@ -19,34 +19,21 @@ export default function ufit() {
           Application Developer I
         </p>
         <div className="flex space-x-2 my-2">
-          <Image
-            width={"999"}
-            height={"999"}
-            className="h-8 w-8"
-            src="/iconSkills/react.png"
-            alt={"react"}
-          />
-          <Image
-            width={"999"}
-            height={"999"}
-            className="h-8 w-8"
-            src="/iconSkills/node.png"
-            alt={"node"}
-          />
-          <Image
-            width={"999"}
-            height={"999"}
-            className="h-8 w-8"
-            src="/iconSkills/matui.png"
-            alt={"matui"}
-          />
-          <Image
-            width={"999"}
-            height={"999"}
-            className="h-8 w-8"
-            src="/iconSkills/git.png"
-            alt={"git"}
-          />
+          <span
+            className={`inline-flex items-center rounded bg-[#b69eff] px-2 py-1 text-sm font-medium `}
+          >
+            React
+          </span>
+          <span
+            className={`inline-flex items-center rounded bg-[#b69eff] px-2 py-1 text-sm font-medium `}
+          >
+            Node
+          </span>
+          <span
+            className={`inline-flex items-center rounded bg-[#b69eff] px-2 py-1 text-sm font-medium `}
+          >
+            TypeScript
+          </span>
         </div>
         <p className="uppercase text-gray-300">July 2022 - Present</p>
         <ul className="text-m text-gray-200">

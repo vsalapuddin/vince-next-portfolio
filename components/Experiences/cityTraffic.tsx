@@ -16,27 +16,21 @@ export default function ufit() {
         </h4>
         <p className="font-bold mt-1 italic text-center">Back-End Developer</p>
         <div className="flex space-x-2 my-2">
-          <Image
-            width={"999"}
-            height={"999"}
-            className="h-8 w-8"
-            src="/iconSkills/react.png"
-            alt={"react"}
-          />
-          <Image
-            width={"999"}
-            height={"999"}
-            className="h-8 w-8"
-            src="/iconSkills/git.png"
-            alt={"git"}
-          />
-          <Image
-            width={"999"}
-            height={"999"}
-            className="h-8 w-8"
-            src="/iconSkills/python.png"
-            alt={"python"}
-          />
+          <span
+            className={`inline-flex items-center rounded bg-[#b69eff] px-2 py-1 text-sm font-medium `}
+          >
+            React
+          </span>
+          <span
+            className={`inline-flex items-center rounded bg-[#b69eff] px-2 py-1 text-sm font-medium `}
+          >
+            Node
+          </span>
+          <span
+            className={`inline-flex items-center rounded bg-[#b69eff] px-2 py-1 text-sm font-medium `}
+          >
+            Python
+          </span>
         </div>
         <p className="uppercase text-gray-300">Jan 2020 - May 2020</p>
         <ul className="text-m text-gray-200">

@@ -18,20 +18,16 @@ export default function ifas() {
           Data Entry Specialist
         </p>
         <div className="flex space-x-2 my-2">
-          <Image
-            width={"999"}
-            height={"999"}
-            className="h-8 w-8"
-            src="/iconSkills/c++.png"
-            alt={"c++"}
-          />
-          <Image
-            width={"999"}
-            height={"999"}
-            className="h-8 w-8"
-            src="/iconSkills/excel.png"
-            alt={"excel"}
-          />
+          <span
+            className={`inline-flex items-center rounded bg-[#b69eff] px-2 py-1 text-sm font-medium `}
+          >
+            C++
+          </span>
+          <span
+            className={`inline-flex items-center rounded bg-[#b69eff] px-2 py-1 text-sm font-medium `}
+          >
+            Excel
+          </span>
         </div>
         <p className="uppercase text-gray-300">May 2019 - May 2020</p>
         <ul className="text-m text-gray-200">

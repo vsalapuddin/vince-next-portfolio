@@ -18,13 +18,16 @@ export default function ufit() {
           Application Developer Intern
         </p>
         <div className="flex space-x-2 my-2">
-          <Image
-            width={"999"}
-            height={"999"}
-            className="h-8 w-8"
-            src="/iconSkills/sql.png"
-            alt="sql"
-          />
+          <span
+            className={`inline-flex items-center rounded bg-[#b69eff] px-2 py-1 text-sm font-medium `}
+          >
+            SQL
+          </span>
+          <span
+            className={`inline-flex items-center rounded bg-[#b69eff] px-2 py-1 text-sm font-medium `}
+          >
+            PeopleSoft
+          </span>
         </div>
         <p className="uppercase text-gray-300">Jan 2022 - July 2022</p>
         <ul className="text-m text-gray-200">
